@@ -25,5 +25,5 @@ Text:
 ## Example
 
 ```php
-<?php echo markdown($page->text()) ?>
+<?= markdown($page->text()) ?>
 ```

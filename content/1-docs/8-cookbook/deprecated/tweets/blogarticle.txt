@@ -45,13 +45,13 @@ You can use the plugin in any template like this:
 <ul class="tweets">
   <?php foreach($tweets as $tweet): ?>
   <li>
-    <a class="user" href="<?php echo $tweet->user()->url() ?>">
-      <img src="<?php echo $tweet->user()->image() ?>" />
-      <strong><?php echo $tweet->user()->name() ?></strong>
-      <small>@<?php echo $tweet->user()->username() ?></small>
+    <a class="user" href="<?= $tweet->user()->url() ?>">
+      <img src="<?= $tweet->user()->image() ?>" />
+      <strong><?= $tweet->user()->name() ?></strong>
+      <small>@<?= $tweet->user()->username() ?></small>
     </a>
-    <p><?php echo html($tweet->text()) ?></p>
-    <a class="date" href="<?php echo $tweet->url() ?>"><?php echo $tweet->date('h:i A - d M y') ?></a>
+    <p><?= html($tweet->text()) ?></p>
+    <a class="date" href="<?= $tweet->url() ?>"><?= $tweet->date('h:i A - d M y') ?></a>
   </li>
   <?php endforeach ?>
 </ul>

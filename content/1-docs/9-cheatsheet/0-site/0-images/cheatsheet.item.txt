@@ -25,8 +25,8 @@ Text:
 <section class="gallery">
   <?php foreach($site->images() as $image): ?>
   <figure>
-    <a href="<?php echo $image->url() ?>">
-      <img src="<?php echo $image->url() ?>" alt="">
+    <a href="<?= $image->url() ?>">
+      <img src="<?= $image->url() ?>" alt="">
     </a>
   </figure>
   <?php endforeach ?>

@@ -28,5 +28,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->children()->get('some-page')->title() ?>
+<?= $page->children()->get('some-page')->title() ?>
 ```

@@ -37,15 +37,15 @@ Create a new `search.php` template file in `/site/templates`. The search templat
 <?php snippet('header') ?>
 
 <form>
-  <input type="search" name="q" value="<?php echo esc($query) ?>">
+  <input type="search" name="q" value="<?= esc($query) ?>">
   <input type="submit" value="Search">
 </form>
 
 <ul>
   <?php foreach($results as $result): ?>
   <li>
-    <a href="<?php echo $result->url() ?>">
-      <?php echo $result->title()->html() ?>
+    <a href="<?= $result->url() ?>">
+      <?= $result->title()->html() ?>
     </a>
   </li>
   <?php endforeach ?>

@@ -52,7 +52,7 @@ fields:
 You can easily access you new custom fields in your templates:
 
 ```php
-<?php echo $site->user('peter')->twitter() ?>
+<?= $site->user('peter')->twitter() ?>
 ```
 
 **Note**: Custom user fields are only editable once a user has been created because you need to have the user object first.

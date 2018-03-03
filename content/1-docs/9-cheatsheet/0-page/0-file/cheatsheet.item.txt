@@ -32,8 +32,8 @@ Text:
 
 ```php
 <?php if($file = $page->file()): ?>
-<a href="<?php echo $file->url() ?>">
-  <?php echo html($file->filename()) ?>
+<a href="<?= $file->url() ?>">
+  <?= html($file->filename()) ?>
 </a>
 <?php endif ?>
 ```
@@ -42,8 +42,8 @@ Text:
 
 ```php
 <?php if($file = $page->file('myfile.pdf')): ?>
-<a href="<?php echo $file->url() ?>">
-  <?php echo html($file->filename()) ?>
+<a href="<?= $file->url() ?>">
+  <?= html($file->filename()) ?>
 </a>
 <?php endif ?>
 ```

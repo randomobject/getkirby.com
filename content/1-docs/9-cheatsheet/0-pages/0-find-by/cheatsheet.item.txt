@@ -32,6 +32,6 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->children()->findBy('uid', 'some-page')->title() ?>
+<?= $page->children()->findBy('uid', 'some-page')->title() ?>
 
 ```

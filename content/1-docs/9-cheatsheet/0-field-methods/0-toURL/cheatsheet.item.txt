@@ -19,5 +19,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->title()->toUrl() ?>
+<?= $page->title()->toUrl() ?>
 ```

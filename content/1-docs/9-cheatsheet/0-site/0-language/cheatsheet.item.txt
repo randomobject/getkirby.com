@@ -29,11 +29,11 @@ Text:
 ### Return the name of the current language
 
 ```php
-<?php echo $site->language()->name() ?>
+<?= $site->language()->name() ?>
 ```
 
 ### Return the name of another language
 
 ```php
-<?php echo $site->language('de')->name() ?>
+<?= $site->language('de')->name() ?>
 ```

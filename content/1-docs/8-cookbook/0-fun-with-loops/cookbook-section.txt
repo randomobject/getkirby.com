@@ -26,7 +26,7 @@ Foreach loops are needed all over the place. No matter if you build a menu, a si
 <nav>
   <ul>
     <?php foreach($pages->visible() as $item): ?>
-    <li><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></a></li>
+    <li><a href="<?= $item->url() ?>"><?= html($item->title()) ?></a></li>
     <?php endforeach ?>
   </ul>
 </nav>
@@ -71,7 +71,7 @@ $index = 0;
 <nav>
  <ul>
    <?php foreach($items as $item): $index++; ?>
-   <li<?php if($count == $index) echo ' class="last"' ?>><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></a></li>
+   <li<?php if($count == $index) echo ' class="last"' ?>><a href="<?= $item->url() ?>"><?= html($item->title()) ?></a></li>
    <?php endforeach ?>
  </ul>
 </nav>
@@ -139,7 +139,7 @@ $last  = $items->last();
 <nav>
  <ul>
    <?php foreach($items as $item): ?>
-   <li<?php if($item == $last) echo ' class="last"' ?>><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></a></li>
+   <li<?php if($item == $last) echo ' class="last"' ?>><a href="<?= $item->url() ?>"><?= html($item->title()) ?></a></li>
    <?php endforeach ?>
  </ul>
 </nav>
@@ -158,7 +158,7 @@ $first = $items->first();
 <nav>
  <ul>
    <?php foreach($items as $item): ?>
-   <li<?php if($item == $first) echo ' class="first"' ?>><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></a></li>
+   <li<?php if($item == $first) echo ' class="first"' ?>><a href="<?= $item->url() ?>"><?= html($item->title()) ?></a></li>
    <?php endforeach ?>
  </ul>
 </nav>
@@ -194,7 +194,7 @@ $needle = $items->findBy('title', 'Contact');
 <nav>
  <ul>
    <?php foreach($items as $item): ?>
-   <li<?php if($item == $needle) echo ' class="special-item"' ?>><a href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></a></li>
+   <li<?php if($item == $needle) echo ' class="special-item"' ?>><a href="<?= $item->url() ?>"><?= html($item->title()) ?></a></li>
    <?php endforeach ?>
  </ul>
 </nav>

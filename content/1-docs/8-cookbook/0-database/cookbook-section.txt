@@ -128,8 +128,8 @@ Here's a very rough example:
 
   <?php foreach($comments as $comment): ?>
   <li>
-    <h3><?php echo html($comment['name']) ?> said…</h3>
-    <p><?php echo html($comment['text']) ?></p>
+    <h3><?= html($comment['name']) ?> said…</h3>
+    <p><?= html($comment['text']) ?></p>
   </li>
   <?php endforeach ?>
 

@@ -34,10 +34,10 @@ Text:
 <?php
 $years = page('projects')->children()->groupBy('year');
 foreach($years as $year => $items): ?>
-    <h2><?php echo $year ?></h2>
+    <h2><?= $year ?></h2>
     <ul>
       <?php foreach($items as $item) : ?>
-      <li><?php echo $item->title() ?></li>
+      <li><?= $item->title() ?></li>
       <?php endforeach; ?>
     </ul>
 <?php endforeach ?>

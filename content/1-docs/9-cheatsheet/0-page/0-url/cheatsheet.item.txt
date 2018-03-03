@@ -22,7 +22,7 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->url() ?>
+<?= $page->url() ?>
 ```
 
 
@@ -31,5 +31,5 @@ Text:
 On multi-language sites you can get the URL of a page for a different language, by passing the language code.
 
 ```php
-<?php echo $page->url('de') ?>
+<?= $page->url('de') ?>
 ```

@@ -77,26 +77,26 @@ This is just a basic example of how the article template could look:
 
 <article>
 
-  <h1><?php echo $page->title()->html() ?></h1>
-  <time><?php echo $page->date('d.m.Y') ?></time>
-  <?php echo $page->text()->kirbytext() ?>
+  <h1><?= $page->title()->html() ?></h1>
+  <time><?= $page->date('d.m.Y') ?></time>
+  <?= $page->text()->kirbytext() ?>
 
   <?php $author = $pages->find('authors/' . $page->author()) ?>
   <aside class="author">
 
-    <h1><?php echo $author->name() ?></h1>
+    <h1><?= $author->name() ?></h1>
 
     <figure>
-      <img src="<?php echo $author->images()->first()->url() ?>">
+      <img src="<?= $author->images()->first()->url() ?>">
     </figure>
 
-    <?php echo $author->bio()->kirbytext() ?>
+    <?= $author->bio()->kirbytext() ?>
 
     <h2>On the web:</h2>
 
     <ul>
-      <li><a href="<?php echo $author->website() ?>">Website</a></li>
-      <li><a href="<?php echo $author->twitter() ?>">Twitter</a></li>
+      <li><a href="<?= $author->website() ?>">Website</a></li>
+      <li><a href="<?= $author->twitter() ?>">Twitter</a></li>
     </ul>
 
   </aside>
@@ -127,15 +127,15 @@ In that template you can loop through all subfolders of the authors folder and b
 <?php foreach($page->children() as $author): ?>
 <article class="author">
 
-  <h1><?php echo $author->name()->html() ?></h1>
+  <h1><?= $author->name()->html() ?></h1>
 
   <figure>
-    <img src="<?php echo $author->images()->first()->url() ?>">
+    <img src="<?= $author->images()->first()->url() ?>">
   </figure>
 
   <ul class="articles">
     <?php foreach($articles->filterBy('author', $author->uid()) as $article): ?>
-    <li><a href="<?php echo $article->url() ?>"><?php echo $article->title() ?></a></li>
+    <li><a href="<?= $article->url() ?>"><?= $article->title() ?></a></li>
     <?php endforeach ?>
   </ul>
 

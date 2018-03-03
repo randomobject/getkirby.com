@@ -37,5 +37,5 @@ Text:
 ## Example
 
 ```php
-<?php echo youtube('https://www.youtube.com/watch?v=mbyzgeee2mg') ?>
+<?= youtube('https://www.youtube.com/watch?v=mbyzgeee2mg') ?>
 ```

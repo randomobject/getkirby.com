@@ -45,13 +45,13 @@ And you can even customize the size of the videos:
 There are also two helper functions for your templates. So if you want to embed videos right in your templates instead of embedding them in your content files, you can do it like this:
 
 ```php
-<?php echo youtube('http://www.youtube.com/watch?v=iUCDhvbQFmU') ?>
+<?= youtube('http://www.youtube.com/watch?v=iUCDhvbQFmU') ?>
 
-<?php echo youtube('http://www.youtube.com/watch?v=iUCDhvbQFmU', 500, 300) ?>
+<?= youtube('http://www.youtube.com/watch?v=iUCDhvbQFmU', 500, 300) ?>
 
-<?php echo vimeo('http://vimeo.com/32875422') ?>
+<?= vimeo('http://vimeo.com/32875422') ?>
 
-<?php echo vimeo('http://vimeo.com/32875422', 500, 300) ?>
+<?= vimeo('http://vimeo.com/32875422', 500, 300) ?>
 
 ```
 

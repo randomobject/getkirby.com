@@ -25,8 +25,8 @@ I will use (link: http://jquery.com/ text: jQuery) to handle all the Ajax calls,
 Like you would with any other external Javascript file, you can either use the standard `<script>` tags in your header or footer snippets or you can embed Javascript Kirby-style:
 
 ```php
-<?php echo js('assets/javascript/jquery.js') ?>
-<?php echo js('assets/javascript/scripts.js') ?>
+<?= js('assets/javascript/jquery.js') ?>
+<?= js('assets/javascript/scripts.js') ?>
 ```
 
 I will use a second `scripts.js` to store all the custom Javascript, we will need.

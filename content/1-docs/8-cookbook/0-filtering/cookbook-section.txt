@@ -213,7 +213,7 @@ $relatedPages = $children->filter(function($child) use($tags) {
 <ul>
   <!-- shuffle and limit the results -->
   <?php foreach($relatedPages->not($page)->shuffle()->limit(3) as $related): ?>
-    <li><a href='<?php echo $related->url(); ?>'><?php echo $related->title(); ?></a></li>
+    <li><a href='<?= $related->url(); ?>'><?= $related->title(); ?></a></li>
   <?php endforeach ?>
 </ul>
 ```
@@ -286,7 +286,7 @@ Let's suppose we had a clothing shop and wanted to give our potential customers 
       <?php if(!$item) continue ?>
 
       <!-- set the option to selected if selected -->
-      <option<?php e(isset($data['color']) && $data['color'] == $item, ' selected') ?> value="<?php echo $item ?>"><?php echo $item?></option>
+      <option<?php e(isset($data['color']) && $data['color'] == $item, ' selected') ?> value="<?= $item ?>"><?= $item?></option>
     <?php endforeach ?>
   </select>
   <select name="brand" onchange="this.form.submit()">
@@ -294,7 +294,7 @@ Let's suppose we had a clothing shop and wanted to give our potential customers 
 
     <?php foreach($brand as $item): ?>
       <?php if ($item == "") continue; ?>
-      <option<?php e(isset($data['brand']) && $data['brand'] == $item, ' selected') ?> value="<?php echo $item ?>"><?php echo $item ?></option>
+      <option<?php e(isset($data['brand']) && $data['brand'] == $item, ' selected') ?> value="<?= $item ?>"><?= $item ?></option>
     <?php endforeach ?>
   </select>
   <select name="size" onchange="this.form.submit()">
@@ -302,7 +302,7 @@ Let's suppose we had a clothing shop and wanted to give our potential customers 
 
     <?php foreach($size as $item): ?>
       <?php if($item == "") continue; ?>
-      <option<?php e(isset($data['size']) && $data['size'] == $item, ' selected') ?> value="<?php echo $item ?>"><?php echo $item ?></option>
+      <option<?php e(isset($data['size']) && $data['size'] == $item, ' selected') ?> value="<?= $item ?>"><?= $item ?></option>
     <?php endforeach ?>
   </select>
 </form>

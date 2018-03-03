@@ -140,8 +140,8 @@ You can now use a simple foreach loop to build HTML for all addresses:
 <?php foreach($addresses as $address): ?>
 <div class="address">
 
-  <?php echo $address['Street'] ?><br />
-  <?php echo $address['ZIP'] ?> <?php echo $address['City'] ?>
+  <?= $address['Street'] ?><br />
+  <?= $address['ZIP'] ?> <?= $address['City'] ?>
 
   …
 

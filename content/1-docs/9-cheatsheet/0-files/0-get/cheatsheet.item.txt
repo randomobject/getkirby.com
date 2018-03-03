@@ -22,5 +22,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->files()->get('myfile.pdf')->url() ?>
+<?= $page->files()->get('myfile.pdf')->url() ?>
 ```

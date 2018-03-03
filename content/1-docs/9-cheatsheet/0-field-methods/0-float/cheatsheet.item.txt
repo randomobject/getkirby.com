@@ -18,6 +18,6 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->mynumber()->float() ?>
+<?= $page->mynumber()->float() ?>
 ```
 

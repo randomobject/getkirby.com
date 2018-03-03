@@ -318,10 +318,10 @@ Now you can do amazing things in your header snippet for example:
 
 ```php
 <?php if($user = Auth::user()): ?>
-Hey <?php echo $user->firstName() ?>! <br />
+Hey <?= $user->firstName() ?>! <br />
 I know what you did last summer and I even got your phone number:
-<?php echo $user->phone() ?> and your email address:
-<?php echo $user->email() ?>
+<?= $user->phone() ?> and your email address:
+<?= $user->email() ?>
 <?php endif ?>
 
 ```

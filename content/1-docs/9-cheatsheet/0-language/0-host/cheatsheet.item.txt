@@ -24,5 +24,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $site->language('en')->host() ?>
+<?= $site->language('en')->host() ?>
 ```

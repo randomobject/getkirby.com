@@ -84,11 +84,11 @@ With such a controller, the template can be super clean. A foreach loop for the 
 <nav class="pagination">
 
   <?php if($pagination->hasPrevPage()): ?>
-  <a href="<?php echo $pagination->prevPageUrl() ?>">previous articles</a>
+  <a href="<?= $pagination->prevPageUrl() ?>">previous articles</a>
   <?php endif ?>
 
   <?php if($pagination->hasNextPage()): ?>
-  <a href="<?php echo $pagination->nextPageUrl() ?>">next articles</a>
+  <a href="<?= $pagination->nextPageUrl() ?>">next articles</a>
   <?php endif ?>
 
 </nav>

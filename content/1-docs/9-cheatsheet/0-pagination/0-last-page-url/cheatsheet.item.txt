@@ -29,7 +29,7 @@ $pagination = $subpages->pagination();
 
 <!-- foreach loop with subpages -->
 
-<a href="<?php echo $pagination->lastPageUrl() ?>">
+<a href="<?= $pagination->lastPageUrl() ?>">
   Go to last page
 </a>
 ```

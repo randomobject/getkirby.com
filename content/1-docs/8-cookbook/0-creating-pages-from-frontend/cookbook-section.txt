@@ -311,7 +311,7 @@ Now that we are almost finished, let's complete our `event.php` so that it shows
 // if the form was successfully submitted and the page created, show the success message
 if(isset($success)): ?>
   <div class="message">
-    <?php echo $success; ?>
+    <?= $success; ?>
   </div>
 <?php endif ?>
 
@@ -322,7 +322,7 @@ if($alert): ?>
   <div class="alert">
     <ul>
       <?php foreach($alert as $message): ?>
-        <li><?php echo html($message) ?></li>
+        <li><?= html($message) ?></li>
       <?php endforeach ?>
     </ul>
   </div>

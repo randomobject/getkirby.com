@@ -27,7 +27,7 @@ I got a request today, how it would be possible to react on odd or even rows in 
 ```php
 <ul>
   <?php $n = 0; foreach($page->children() as $child): $n++; ?>
-  <li class="<?php echo ($n%2) ? 'odd' : 'even' ?>">
+  <li class="<?= ($n%2) ? 'odd' : 'even' ?>">
     ...
   </li>
   <?php endforeach ?>
@@ -97,7 +97,7 @@ But in fact this isn't very elegant and we can write that a lot shorter. In PHP 
 There's also a shorter way to write if clauses:
 
 ```php
-<?php echo ($n%2) ? 'odd' : 'even' ?>
+<?= ($n%2) ? 'odd' : 'even' ?>
 ```
 
 If the condition is true, the first string will be echoed, otherwise the second string will be echoed.
@@ -109,7 +109,7 @@ All put together, you will get a nice and clean example how to add an odd or eve
 ```php
 <ul>
   <?php $n = 0; foreach($page->children() as $child): $n++; ?>
-  <li class="<?php echo ($n%2) ? 'odd' : 'even' ?>">
+  <li class="<?= ($n%2) ? 'odd' : 'even' ?>">
     ...
   </li>
   <?php endforeach ?>

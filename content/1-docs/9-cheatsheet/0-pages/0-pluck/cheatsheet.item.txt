@@ -39,7 +39,7 @@ Text:
 ```php
 <ul>
   <?php foreach($page->children()->pluck('title') as $title): ?>
-  <li><?php echo html($title) ?></li>
+  <li><?= html($title) ?></li>
   <?php endforeach ?>
 </ul>
 ```

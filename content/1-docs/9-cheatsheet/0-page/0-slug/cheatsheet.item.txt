@@ -29,5 +29,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->slug() ?>
+<?= $page->slug() ?>
 ```

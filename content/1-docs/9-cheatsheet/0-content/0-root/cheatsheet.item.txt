@@ -27,8 +27,8 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->content()->root() ?>
+<?= $page->content()->root() ?>
 
 //multi-lang installation
-<?php echo $page->content('en')->root() ?>
+<?= $page->content('en')->root() ?>
 ```

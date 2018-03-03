@@ -27,11 +27,11 @@ Text:
 ### Fetching a specific page by URI
 
 ```php
-<?php echo page('blog')->title() ?>
+<?= page('blog')->title() ?>
 ```
 
 ### Fetching the current page
 
 ```php
-<?php echo page()->title() ?>
+<?= page()->title() ?>
 ```

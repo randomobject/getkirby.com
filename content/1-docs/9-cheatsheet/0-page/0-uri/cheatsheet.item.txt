@@ -27,5 +27,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->uri() ?>
+<?= $page->uri() ?>
 ```

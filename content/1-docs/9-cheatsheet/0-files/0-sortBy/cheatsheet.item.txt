@@ -23,8 +23,8 @@ Text:
 <ul>
   <?php foreach($page->files()->sortBy('modified', 'desc') as $file): ?>
   <li>
-    <a href="<?php echo $file->url() ?>">
-      <?php echo html($file->filename()) ?>
+    <a href="<?= $file->url() ?>">
+      <?= html($file->filename()) ?>
     </a>
   </li>
   <?php endforeach ?>

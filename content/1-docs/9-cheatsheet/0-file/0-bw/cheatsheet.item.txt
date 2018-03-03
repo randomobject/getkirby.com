@@ -26,5 +26,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->image()->bw()->html() ?>
+<?= $page->image()->bw()->html() ?>
 ```

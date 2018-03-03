@@ -25,12 +25,12 @@ Text:
 
 ```php
 <?php if($user = $site->user()): ?>
-Hello <?php echo $user->username() ?>
+Hello <?= $user->username() ?>
 <?php endif ?>
 ```
 
 ### Fetching any user by username
 
 ```php
-<?php echo $site->user('bastian')->firstname() ?>
+<?= $site->user('bastian')->firstname() ?>
 ```

@@ -25,5 +25,5 @@ Text:
 ## Example
 
 ```php
-<?php echo smartypants($page->title()) ?>
+<?= smartypants($page->title()) ?>
 ```

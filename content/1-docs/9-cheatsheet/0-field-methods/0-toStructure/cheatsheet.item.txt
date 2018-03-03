@@ -36,8 +36,8 @@ While the (link: docs/cheatsheet/field-methods/yaml text: `yaml` method) returns
 <ul>
   <?php foreach($page->accounts()->toStructure() as $account): ?>
   <li>
-    <a href="<?php echo $account->url() ?>">
-      <?php echo $account->name()->html() ?>
+    <a href="<?= $account->url() ?>">
+      <?= $account->name()->html() ?>
     </a>
   </li>
   <?php endforeach ?>

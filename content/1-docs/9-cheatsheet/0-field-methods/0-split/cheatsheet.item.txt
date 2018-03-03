@@ -21,7 +21,7 @@ Text:
 <h2>Tags</h2>
 <ul>
   <?php foreach($page->tags()->split(',') as $tag): ?>
-  <li><?php echo $tag ?></li>
+  <li><?= $tag ?></li>
   <?php endforeach ?>
 </ul>
 

@@ -25,5 +25,5 @@ Text:
 ## Example
 
 ```php
-<?php echo multiline($page->text()) ?>
+<?= multiline($page->text()) ?>
 ```

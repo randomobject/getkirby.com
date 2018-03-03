@@ -58,7 +58,7 @@ Add some basic template stuff to that file:
 I guess you all can do that by hard but let's just build a very basic search form for our search page:
 
 ```php
-<form action="<?php echo thisURL() ?>">
+<form action="<?= thisURL() ?>">
   <input type="text" placeholder="Search…" name="q" />
   <input type="submit" value="Search" />
 </form>
@@ -103,7 +103,7 @@ Displaying a list of found pages is as simple as building the articles overview 
 <?php if($results): ?>
 <ul>
   <?php foreach($results as $result): ?>
-  <li><a href="<?php echo $result->url() ?>"><?php echo $result->title() ?></a></li>
+  <li><a href="<?= $result->url() ?>"><?= $result->title() ?></a></li>
   <?php endforeach ?>
 </ul>
 <?php endif ?>

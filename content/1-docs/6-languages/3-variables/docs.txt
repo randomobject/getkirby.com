@@ -55,5 +55,5 @@ l::set(array(
 Those translated variables can be used in any template, plugin or snippet:
 
 ```php
-<input type="submit" value="<?php echo l::get('submit') ?>" />
+<input type="submit" value="<?= l::get('submit') ?>" />
 ```

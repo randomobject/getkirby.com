@@ -32,7 +32,7 @@ Text:
 
 ```php
 <?php if($next = $page->nextVisible()): ?>
-<a href="<?php echo $next->url() ?>">next visible page</a>
+<a href="<?= $next->url() ?>">next visible page</a>
 <?php endif ?>
 ```
 
@@ -40,6 +40,6 @@ Text:
 
 ```php
 <?php if($next = $page->nextVisible('title', 'asc')): ?>
-<a href="<?php echo $next->url() ?>">next visible page</a>
+<a href="<?= $next->url() ?>">next visible page</a>
 <?php endif ?>
 ```

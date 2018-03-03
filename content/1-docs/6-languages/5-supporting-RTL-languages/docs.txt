@@ -31,7 +31,7 @@ c::set('languages', array(
 The second step is to add the reading direction as a body class e.g. in your header snippet. To get and be able to output the current language's reading direction use `$site->language()->direction()`.
 
 ```php
-<body class="<?php echo $site->language()->direction() ?>">
+<body class="<?= $site->language()->direction() ?>">
 ```
 
 ## Modify your CSS

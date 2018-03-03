@@ -71,7 +71,7 @@ Later in your templates and snippets you could check for that drafts field and i
     <?php foreach($pages->visible() AS $p): ?>
     <?php if($p->draft() == 'yes') continue ?>
     <li>
-      <a<?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo html($p->title()) ?></a>
+      <a<?php e($p->isOpen(), ' class="active"') ?> href="<?= $p->url() ?>"><?= html($p->title()) ?></a>
     </li>
     <? endforeach ?>
   </ul>

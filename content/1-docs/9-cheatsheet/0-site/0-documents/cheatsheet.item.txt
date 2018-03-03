@@ -26,9 +26,9 @@ Text:
 <ul>
   <?php foreach($site->documents()->filterBy('extension', 'pdf') as $pdf): ?>
   <li>
-    <a href="<?php echo $pdf->url() ?>">
-      <?php echo $pdf->filename() ?>
-      (<?php echo $pdf->niceSize() ?>)
+    <a href="<?= $pdf->url() ?>">
+      <?= $pdf->filename() ?>
+      (<?= $pdf->niceSize() ?>)
     </a>
   </li>
   <?php endforeach ?>

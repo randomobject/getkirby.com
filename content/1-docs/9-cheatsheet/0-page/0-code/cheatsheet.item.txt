@@ -21,7 +21,7 @@ Text:
 
 ```php
 <?php foreach($page->code()->filterBy('extension', 'css') as $css): ?>
-<?php echo css($css->url()) ?>
+<?= css($css->url()) ?>
 <?php endforeach ?>
 ```
 

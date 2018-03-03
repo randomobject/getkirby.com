@@ -27,6 +27,6 @@ Text:
 <?php if($page->isHomePage()): ?>
 <title>Welcome to my website</title>
 <?php else: ?>
-<title><?php echo html($page->title() . ' / ' . $site->title()) ?></title>
+<title><?= html($page->title() . ' / ' . $site->title()) ?></title>
 <?php endif ?>
 ```

@@ -22,5 +22,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->file('myfile.pdf')->hash() ?>
+<?= $page->file('myfile.pdf')->hash() ?>
 ```

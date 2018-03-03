@@ -47,10 +47,10 @@ You can pass variables to snippets with the second argument, so you can simply t
 <html lang="en">
 <head>
 
-  <title><?php echo html($site->title()) ?> - <?php echo html($page->title()) ?></title>
+  <title><?= html($site->title()) ?> - <?= html($page->title()) ?></title>
   <meta charset="utf-8" />
 
-  <?php echo css('assets/css/styles.css') ?>
+  <?= css('assets/css/styles.css') ?>
   <?php if(isset($css)) echo css($css) ?>
 
 </head>
@@ -68,7 +68,7 @@ Plan A is nice, but there's a more simple way, which doesn't require to pass the
 You can ask for the used template on each page like this:
 
 ```php
-<?php echo $page->template() ?>
+<?= $page->template() ?>
 ```
 
 This will give you the template name without the PHP extension. So what we need is a little PHP trickery for the header snippet:
@@ -78,7 +78,7 @@ This will give you the template name without the PHP extension. So what we need 
 <html lang="en">
 <head>
 
-  <title><?php echo html($site->title()) ?> - <?php echo html($page->title()) ?></title>
+  <title><?= html($site->title()) ?> - <?= html($page->title()) ?></title>
   <meta charset="utf-8" />
 
   <?php

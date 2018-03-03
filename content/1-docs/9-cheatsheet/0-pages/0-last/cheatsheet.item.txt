@@ -22,5 +22,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->children()->last()->title() ?>
+<?= $page->children()->last()->title() ?>
 ```

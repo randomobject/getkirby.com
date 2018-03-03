@@ -48,7 +48,7 @@ l::set('subscribe', 'Anmelden')
 Those variables can be fetched in your templates and snippets with the `l()` helper.
 
 ```php
-<button><?php echo l('submit') ?></button>
+<button><?= l('submit') ?></button>
 ```
 
 When a user switches the language of the site, the button will automatically be translated.

@@ -31,7 +31,7 @@ Text:
 ### Fetch a single subpage
 
 ```php
-<?php echo $site->find('subpage-a')->title() ?>
+<?= $site->find('subpage-a')->title() ?>
 ```
 
 ### Fetch multiple subpages
@@ -40,8 +40,8 @@ Text:
 <ul>
   <?php foreach($site->find('subpage-a', 'subpage-c', 'subpage-i') as $subpage): ?>
   <li>
-    <a href="<?php echo $subpage->url() ?>">
-      <?php echo html($subpage->title()) ?>
+    <a href="<?= $subpage->url() ?>">
+      <?= html($subpage->title()) ?>
     </a>
   </li>
   <?php endforeach ?>

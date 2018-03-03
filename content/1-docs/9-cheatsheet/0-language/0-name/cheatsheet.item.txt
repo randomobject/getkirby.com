@@ -23,8 +23,8 @@ Text:
 <ul>
   <?php foreach($site->languages() as $language): ?>
   <li>
-    <a href="<?php echo $language->url() ?>">
-      <?php echo html($language->name()) ?>
+    <a href="<?= $language->url() ?>">
+      <?= html($language->name()) ?>
     </a>
   </li>
   <?php endforeach ?>

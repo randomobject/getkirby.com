@@ -40,8 +40,8 @@ Text:
 <ul>
   <?php foreach(page('blog')->grandChildren() as $item): ?>
   <li>
-    <a href="<?php echo $item->url() ?>">
-      <?php echo html($item->title()) ?>
+    <a href="<?= $item->url() ?>">
+      <?= html($item->title()) ?>
     </a>
   </li>
   <?php endforeach ?>

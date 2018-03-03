@@ -34,7 +34,7 @@ Let's start by adding some dynamic content.
 <head>
   <meta charset="UTF-8">
   <title>
-    <?php echo $site->title() ?>
+    <?= $site->title() ?>
   </title>
 </head>
 <body>
@@ -77,18 +77,18 @@ All this data can be used in your templates instantly:
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="<?php echo $site->description() ?>">
-  <meta name="keywords" content="<?php echo $site->keywords() ?>">
+  <meta name="description" content="<?= $site->description() ?>">
+  <meta name="keywords" content="<?= $site->keywords() ?>">
   <title>
-    <?php echo $site->title() ?>
+    <?= $site->title() ?>
   </title>
 </head>
 <body>
 
   <header>
     <h1 class="logo">
-      <a href="<?php echo $site->url() ?>">
-        <?php echo $site->title() ?>
+      <a href="<?= $site->url() ?>">
+        <?= $site->title() ?>
       </a>
     </h1>
   </header>
@@ -97,11 +97,11 @@ All this data can be used in your templates instantly:
 
   <footer>
 
-    <p class="copyright"><?php echo $site->copyright() ?></p>
+    <p class="copyright"><?= $site->copyright() ?></p>
 
     <ul>
-      <li><a href="<?php echo $site->twitter() ?>">Twitter</a></li>
-      <li><a href="<?php echo $site->facebook() ?>">Facebook</a></li>
+      <li><a href="<?= $site->twitter() ?>">Twitter</a></li>
+      <li><a href="<?= $site->facebook() ?>">Facebook</a></li>
     </ul>
 
   </footer>
@@ -120,30 +120,30 @@ This is all great for the basic framework of our template, but now it's time to 
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="<?php echo $site->description() ?>">
-  <meta name="keywords" content="<?php echo $site->keywords() ?>">
+  <meta name="description" content="<?= $site->description() ?>">
+  <meta name="keywords" content="<?= $site->keywords() ?>">
   <title>
-    <?php echo $page->title() ?> | <?php echo $site->title() ?>
+    <?= $page->title() ?> | <?= $site->title() ?>
   </title>
 </head>
 <body>
 
   <header>
     <h1>
-      <a href="<?php echo $site->url() ?>">
-        <?php echo $site->title() ?>
+      <a href="<?= $site->url() ?>">
+        <?= $site->title() ?>
       </a>
     </h1>
   </header>
 
   <main>
-    <h1><?php echo $page->title() ?></h1>
-    <?php echo $page->text() ?>
+    <h1><?= $page->title() ?></h1>
+    <?= $page->text() ?>
   </main>
 
   <footer>
-    <a href="<?php echo $site->twitter() ?>">Twitter</a>
-    <a href="<?php echo $site->facebook() ?>">Facebook</a>
+    <a href="<?= $site->twitter() ?>">Twitter</a>
+    <a href="<?= $site->facebook() ?>">Facebook</a>
   </footer>
 
 </body>
@@ -153,13 +153,13 @@ This is all great for the basic framework of our template, but now it's time to 
 The document title and the main container of the page are now completed with data from the currently visited page.
 
 ```php
-<?php echo $page->title() ?>
+<?= $page->title() ?>
 ```
 
 … and …
 
 ```php
-<?php echo $page->text() ?>
+<?= $page->text() ?>
 ```
 
 Those variables get their content come from the text file of the current page.

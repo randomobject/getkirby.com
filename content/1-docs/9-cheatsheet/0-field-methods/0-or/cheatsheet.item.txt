@@ -18,5 +18,5 @@ Text:
 ## Example
 
 ```php
-<meta name="description" content="<?php echo $page->description()->or($site->description()) ?>">
+<meta name="description" content="<?= $page->description()->or($site->description()) ?>">
 ```

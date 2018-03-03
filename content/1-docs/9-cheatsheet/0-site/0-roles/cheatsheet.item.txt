@@ -20,5 +20,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $site->roles() ?>
+<?= $site->roles() ?>
 ```

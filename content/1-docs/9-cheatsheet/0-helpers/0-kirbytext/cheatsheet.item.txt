@@ -29,13 +29,13 @@ Text:
 ## Example
 
 ```php
-<?php echo kirbytext($page->text()) ?>
+<?= kirbytext($page->text()) ?>
 ```
 
 <since v="2.3.2">
 ### Parse Kirbytext for another page
 
 ```php
-<?php echo kirbytext('(\image: road.jpg)', $page->children()->first()) ?>
+<?= kirbytext('(\image: road.jpg)', $page->children()->first()) ?>
 ```
 </since>

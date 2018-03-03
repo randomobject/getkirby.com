@@ -22,7 +22,7 @@ Text:
 ## Example
 
 ```php
-<a href="<?php echo $page->tinyurl() ?>">Tinyurl</a>
+<a href="<?= $page->tinyurl() ?>">Tinyurl</a>
 ```
 
 Tinyurls are only available when they are enabled in the config. Tinyurls are enabled by default.

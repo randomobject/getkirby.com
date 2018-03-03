@@ -28,6 +28,6 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->children()->findByURI('some-page')->title() ?>
+<?= $page->children()->findByURI('some-page')->title() ?>
 
 ```

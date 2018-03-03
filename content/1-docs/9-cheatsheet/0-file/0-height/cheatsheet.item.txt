@@ -22,7 +22,7 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->image()->height(); ?>
+<?= $page->image()->height(); ?>
 ```
 
 <since v="2.3.0">

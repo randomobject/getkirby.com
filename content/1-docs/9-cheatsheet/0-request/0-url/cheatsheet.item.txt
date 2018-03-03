@@ -16,5 +16,5 @@ text:
 Text:
 
 ```php
-<?php echo kirby()->request()->url() ?>
+<?= kirby()->request()->url() ?>
 ```

@@ -198,8 +198,8 @@ Let’s create the `about-me.php` snippet together to show you how to access the
 
 ```php
 <section id="about-me">
-  <h1><?php echo $data->title()->html() ?></h1>
-  <?php echo $data->text()->kirbytext() ?>
+  <h1><?= $data->title()->html() ?></h1>
+  <?= $data->text()->kirbytext() ?>
 </section>
 ```
 
@@ -215,14 +215,14 @@ The `about-me` section was easy, but something like the project section is going
 
 ```php
 <section id="projects">
-  <h1><?php echo $data->title()->html() ?></h1>
-  <?php echo $data->text()->kirbytext() ?>
+  <h1><?= $data->title()->html() ?></h1>
+  <?= $data->text()->kirbytext() ?>
 
   <ul>
     <?php foreach($data->children()->visible() as $project): ?>
       <li>
         <figure>
-          <img src="<?php echo $project->images()->first()->url() ?>" alt="<?php echo $project->title()->html() ?>">
+          <img src="<?= $project->images()->first()->url() ?>" alt="<?= $project->title()->html() ?>">
         </figure>
       </li>
     <?php endforeach ?>

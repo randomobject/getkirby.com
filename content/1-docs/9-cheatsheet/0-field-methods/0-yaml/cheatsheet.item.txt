@@ -47,12 +47,12 @@ Those addresses can be fetched and parsed very easily in your templates with the
 ```php
 <?php foreach($page->addresses()->yaml() as $address): ?>
   <div class="address">
-    <?php echo $address['street'] ?><br />
-    <?php echo $address['zip'] ?> <?php echo $address['city'] ?>
+    <?= $address['street'] ?><br />
+    <?= $address['zip'] ?> <?= $address['city'] ?>
   </div>
   <div class="contact">
-    <?php echo $address['phone'] ?><br />
-    <?php echo $address['email'] ?>
+    <?= $address['phone'] ?><br />
+    <?= $address['email'] ?>
   </div>
 </div>
 <?php endforeach ?>

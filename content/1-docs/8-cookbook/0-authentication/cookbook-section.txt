@@ -81,23 +81,23 @@ The login template is pretty straight forward.
 ```php
 <?php snippet('header') ?>
 
-<h1><?php echo $page->title()->html() ?></h1>
+<h1><?= $page->title()->html() ?></h1>
 
 <?php if($error): ?>
-<div class="alert"><?php echo $page->alert()->html() ?></div>
+<div class="alert"><?= $page->alert()->html() ?></div>
 <?php endif ?>
 
 <form method="post">
   <div>
-    <label for="username"><?php echo $page->username()->html() ?></label>
+    <label for="username"><?= $page->username()->html() ?></label>
     <input type="text" id="username" name="username">
   </div>
   <div>
-    <label for="password"><?php echo $page->password()->html() ?></label>
+    <label for="password"><?= $page->password()->html() ?></label>
     <input type="password" id="password" name="password">
   </div>
   <div>
-    <input type="submit" name="login" value="<?php echo $page->button()->html() ?>">
+    <input type="submit" name="login" value="<?= $page->button()->html() ?>">
   </div>
 </form>
 
@@ -175,13 +175,13 @@ As soon as the user is logged in it might be nice to display a logout link in th
   <ul>
     <?php foreach($pages->visible() as $p): ?>
     <li>
-      <a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a>
+      <a <?php e($p->isOpen(), ' class="active"') ?> href="<?= $p->url() ?>"><?= $p->title()->html() ?></a>
     </li>
     <?php endforeach ?>
 
     <?php if($user = $site->user()): ?>
     <li>
-      <a href="<?php echo url('logout') ?>">Logout</a>
+      <a href="<?= url('logout') ?>">Logout</a>
     </li>
     <?php endif ?>
   </ul>
@@ -213,9 +213,9 @@ Parts of a page can be hidden for unauthenticated users in the same way:
 ```php
 <?php snippet('header') ?>
 
-<h1><?php echo $page->title()->html() ?></h1>
+<h1><?= $page->title()->html() ?></h1>
 
-<?php echo $page->text()->kirbytext() ?>
+<?= $page->text()->kirbytext() ?>
 
 <?php if($site->user()): ?>
 Top Secret: the meaning of life is…
@@ -241,7 +241,7 @@ The (link: docs/cheatsheet/#user text: $user) object can be used to display all 
 
 ```php
 <header>
-  <h1><a href="<?php echo url() ?>">Your Logo</a></h1>
+  <h1><a href="<?= url() ?>">Your Logo</a></h1>
 
   <?php snippet('menu') ?>
 
@@ -249,13 +249,13 @@ The (link: docs/cheatsheet/#user text: $user) object can be used to display all 
   <div class="user">
     <figure class="user-avatar">
       <?php if($avatar = $user->avatar()): ?>
-      <img src="<?php echo $avatar->url() ?>">
+      <img src="<?= $avatar->url() ?>">
       <?php else: ?>
-      <img src="<?php echo url('assets/images/avatar.png') ?>">
+      <img src="<?= url('assets/images/avatar.png') ?>">
       <?php endif ?>
     </figure>
     <div class="user-name">
-      <?php echo esc($user->firstName() . ' ' . $user->lastName()) ?>
+      <?= esc($user->firstName() . ' ' . $user->lastName()) ?>
     </div>
   </div>
   <?php endif ?>

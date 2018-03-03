@@ -34,7 +34,7 @@ Text:
 
 ```php
 <?php if($prev = $page->prevInvisible()): ?>
-<a href="<?php echo $prev->url() ?>">previous invisible page</a>
+<a href="<?= $prev->url() ?>">previous invisible page</a>
 <?php endif ?>
 ```
 
@@ -42,6 +42,6 @@ Text:
 
 ```php
 <?php if($prev = $page->prevInvisible('title', 'asc')): ?>
-<a href="<?php echo $prev->url() ?>">previous invisible page</a>
+<a href="<?= $prev->url() ?>">previous invisible page</a>
 <?php endif ?>
 ```

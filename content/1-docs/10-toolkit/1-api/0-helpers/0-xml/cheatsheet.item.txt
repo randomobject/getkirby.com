@@ -25,5 +25,5 @@ Text:
 ## Example
 
 ```php
-<?php echo xml($page->text()) ?>
+<?= xml($page->text()) ?>
 ```

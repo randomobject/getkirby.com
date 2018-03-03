@@ -29,7 +29,7 @@ $pagination = $subpages->pagination();
 
 …
 
-<a href="<?php echo $pagination->pageUrl(5) ?>">
+<a href="<?= $pagination->pageUrl(5) ?>">
   Go to page 5
 </a>
 

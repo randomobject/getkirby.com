@@ -254,7 +254,7 @@ return array(
 In your template you can use the variable like this:
 
 ```php
-<?php echo $text ?>
+<?= $text ?>
 ```
 
 ****

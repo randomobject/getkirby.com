@@ -34,7 +34,7 @@ Text:
 
 ```php
 <?php if($prev = $page->prev()): ?>
-<a href="<?php echo $prev->url() ?>">previous page</a>
+<a href="<?= $prev->url() ?>">previous page</a>
 <?php endif ?>
 ```
 
@@ -42,6 +42,6 @@ Text:
 
 ```php
 <?php if($prev = $page->prev('date', 'desc')): ?>
-<a href="<?php echo $prev->url() ?>">previous page</a>
+<a href="<?= $prev->url() ?>">previous page</a>
 <?php endif ?>
 ```
