@@ -21,8 +21,8 @@ The first option is to redirect users to the home page, when they select another
   <ul>
     <?php foreach($site->languages() as $language): ?>
     <li<?php e($site->language() == $language, ' class="active"') ?>>
-      <a href="<?php echo $language->url() ?>">
-        <?php echo html($language->name()) ?>
+      <a href="<?= $language->url() ?>">
+        <?= html($language->name()) ?>
       </a>
     </li>
     <?php endforeach ?>
@@ -39,8 +39,8 @@ The second option is to redirect users to the same page in the selected language
   <ul>
     <?php foreach($site->languages() as $language): ?>
     <li<?php e($site->language() == $language, ' class="active"') ?>>
-      <a href="<?php echo $page->url($language->code()) ?>">
-        <?php echo html($language->name()) ?>
+      <a href="<?= $page->url($language->code()) ?>">
+        <?= html($language->name()) ?>
       </a>
     </li>
     <?php endforeach ?>
@@ -65,7 +65,7 @@ $site->language() == $language
 The `e()` helper is a Kirby shortcuts to a more complex way of writing an inline if clause:
 
 ```php
-<?php echo $site->language() == $language ? ' class="active"' : '' ?>
+<?= $site->language() == $language ? ' class="active"' : '' ?>
 ```
 
 The entire code will attach `class="active"` to the list element if the languages match. This makes it possible to style the currently active language in a different way.
@@ -78,7 +78,7 @@ You can use this third option if you want to redirect the user to the error page
   <ul>
   <?php foreach($site->languages() as $language): ?>
         <li<?php e($site->language() == $language, ' class="active"') ?>>
-          <a href="<?php e($page->content($language->code())->language() != $site->language($language->code()), page('error')->url($language->code()), $page->url($language->code()))?>"><?php echo $language->code(); ?></a> 
+          <a href="<?php e($page->content($language->code())->language() != $site->language($language->code()), page('error')->url($language->code()), $page->url($language->code()))?>"><?= $language->code(); ?></a> 
         </li> 
   <?php endforeach ?>
   </ul>

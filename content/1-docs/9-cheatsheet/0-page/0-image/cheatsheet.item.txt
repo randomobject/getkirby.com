@@ -32,7 +32,7 @@ Text:
 
 ```php
 <?php if($image = $page->image()): ?>
-<img src="<?php echo $image->url() ?>" alt="">
+<img src="<?= $image->url() ?>" alt="">
 <?php endif ?>
 ```
 
@@ -40,7 +40,7 @@ Text:
 
 ```php
 <?php if($image = $page->image('myimage.jpg')): ?>
-<img src="<?php echo $image->url() ?>" alt="">
+<img src="<?= $image->url() ?>" alt="">
 <?php endif ?>
 ```
 

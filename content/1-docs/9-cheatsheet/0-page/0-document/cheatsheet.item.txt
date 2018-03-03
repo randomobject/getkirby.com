@@ -36,7 +36,7 @@ Text:
 
 ```php
 <?php if($document = $page->document()): ?>
-<a href="<?php echo $document->url() ?>" download>Download</a>
+<a href="<?= $document->url() ?>" download>Download</a>
 <?php endif ?>
 ```
 
@@ -44,6 +44,6 @@ Text:
 
 ```php
 <?php if($document = $page->document('cv.pdf')): ?>
-<a href="<?php echo $document->url() ?>" download>Download</a>
+<a href="<?= $document->url() ?>" download>Download</a>
 <?php endif ?>
 ```

@@ -22,6 +22,6 @@ Text:
 
 ```php
 This collection has
-<?php echo $collection->count() ?>
+<?= $collection->count() ?>
 items
 ```

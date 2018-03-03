@@ -29,5 +29,5 @@ Text:
 ## Example
 
 ```php
-<?php echo gist('https://gist.github.com/bastianallgeier/b79615a9f7ca76c810b7') ?>
+<?= gist('https://gist.github.com/bastianallgeier/b79615a9f7ca76c810b7') ?>
 ```

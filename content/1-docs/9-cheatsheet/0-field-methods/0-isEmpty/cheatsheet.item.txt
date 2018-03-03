@@ -20,6 +20,6 @@ Text:
 ```php
 <?php if(!$page->address()->isEmpty()): ?>
   <h2>Address</h2>
-  <?php echo $page->address()->kirbytext() ?>
+  <?= $page->address()->kirbytext() ?>
 <?php endif ?>
 ```

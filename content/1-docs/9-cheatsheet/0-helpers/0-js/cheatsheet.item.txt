@@ -31,13 +31,13 @@ Text:
 ### Creating a single script tag
 
 ```php
-<?php echo js('assets/js/site.js') ?>
+<?= js('assets/js/site.js') ?>
 ```
 
 ### Creating multiple script tags
 
 ```php
-<?php echo js(array(
+<?= js(array(
   'assets/js/jquery.js',
   'assets/js/jquery.ui.js',
   'assets/js/site.js',
@@ -47,7 +47,7 @@ Text:
 ### Autoloading template specific script files
 
 ```php
-<?php echo js('@auto') ?>
+<?= js('@auto') ?>
 ```
 
 Template specific js files must be located in `/assets/js/templates` and named like the template.
@@ -63,7 +63,7 @@ Template                    | JS file
 If you want the js files to be loaded asynchronously (if supported by the browser), you can set a second parameter as true:
 
 ```php
-<?php echo js('assets/js/site.js', true) ?>
+<?= js('assets/js/site.js', true) ?>
 ```
 
 <since v="2.2.3">
@@ -71,7 +71,7 @@ If you want the js files to be loaded asynchronously (if supported by the browse
 This also works with an array of paths:
 
 ```php
-<?php echo js(array(
+<?= js(array(
   'assets/js/jquery.js',
   'assets/js/jquery.ui.js',
   'assets/js/site.js',
@@ -86,6 +86,6 @@ This also works with an array of paths:
 You can also pass an array of completely custom attributes like the `defer` attribute:
 
 ```php
-<?php echo js('assets/js/site.js', ['async' => true, 'defer' => true, 'data-something' => 'my-value']) ?>
+<?= js('assets/js/site.js', ['async' => true, 'defer' => true, 'data-something' => 'my-value']) ?>
 ```
 </since>

@@ -32,7 +32,7 @@ Text:
 
 ```php
 <?php if($next = $page->nextInvisible()): ?>
-<a href="<?php echo $next->url() ?>">next invisible page</a>
+<a href="<?= $next->url() ?>">next invisible page</a>
 <?php endif ?>
 ```
 
@@ -40,6 +40,6 @@ Text:
 
 ```php
 <?php if($next = $page->nextInvisible('date', 'desc')): ?>
-<a href="<?php echo $next->url() ?>">next invisible page</a>
+<a href="<?= $next->url() ?>">next invisible page</a>
 <?php endif ?>
 ```

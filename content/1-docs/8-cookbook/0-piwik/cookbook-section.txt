@@ -22,7 +22,7 @@ The easiest and most common way to integrate the tracking code for stats with Pi
 
 ```php
 <footer class="colophon">
-  <p><?php echo $site->author() ?></p>
+  <p><?= $site->author() ?></p>
 </footer>
 
 <!-- Piwik -->
@@ -78,7 +78,7 @@ Save a `piwik.php` in your snippets folder...
 
 ```php
 <footer class="colophon">
-  <p><?php echo $site->author() ?></p>
+  <p><?= $site->author() ?></p>
 </footer>
 
 <?php snippet('piwik') ?>
@@ -109,9 +109,9 @@ You’ll have to adjust the `piwik.php` like this:
   _paq.push(["enableLinkTracking"]);
 
   (function() {
-    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://<?php echo $site->piwik_url() ?>/";
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://<?= $site->piwik_url() ?>/";
     _paq.push(["setTrackerUrl", u+"piwik.php"]);
-    _paq.push(["setSiteId", "<?php echo $site->piwik_id() ?>"]);
+    _paq.push(["setSiteId", "<?= $site->piwik_id() ?>"]);
     var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
     g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
   })();

@@ -22,7 +22,7 @@ Text:
 ```php
 This page is a subpage of:
 
-<a href="<?php echo $page->parent()->url() ?>">
-  <?php echo html($page->parent()->title()) ?>
+<a href="<?= $page->parent()->url() ?>">
+  <?= html($page->parent()->title()) ?>
 </a>
 ```

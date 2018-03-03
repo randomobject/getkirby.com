@@ -29,30 +29,30 @@ The most basic use case for snippets is to split your header and footer into sep
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="<?php echo $site->description() ?>">
-  <meta name="keywords" content="<?php echo $site->keywords() ?>">
+  <meta name="description" content="<?= $site->description() ?>">
+  <meta name="keywords" content="<?= $site->keywords() ?>">
   <title>
-    <?php echo $page->title() ?> | <?php echo $site->title() ?>
+    <?= $page->title() ?> | <?= $site->title() ?>
   </title>
 </head>
 <body>
 
   <header>
     <h1>
-      <a href="<?php echo $site->url() ?>">
-        <?php echo $site->title() ?>
+      <a href="<?= $site->url() ?>">
+        <?= $site->title() ?>
       </a>
     </h1>
   </header>
 
   <main>
-    <h1><?php echo $page->title() ?></h1>
-    <?php echo $page->text() ?>
+    <h1><?= $page->title() ?></h1>
+    <?= $page->text() ?>
   </main>
 
   <footer>
-    <a href="<?php echo $site->twitter() ?>">Twitter</a>
-    <a href="<?php echo $site->facebook() ?>">Facebook</a>
+    <a href="<?= $site->twitter() ?>">Twitter</a>
+    <a href="<?= $site->facebook() ?>">Facebook</a>
   </footer>
 
 </body>
@@ -69,18 +69,18 @@ Let's clean this up a bit!
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="<?php echo $site->description() ?>">
-  <meta name="keywords" content="<?php echo $site->keywords() ?>">
+  <meta name="description" content="<?= $site->description() ?>">
+  <meta name="keywords" content="<?= $site->keywords() ?>">
   <title>
-    <?php echo $page->title() ?> | <?php echo $site->title() ?>
+    <?= $page->title() ?> | <?= $site->title() ?>
   </title>
 </head>
 <body>
 
   <header>
     <h1>
-      <a href="<?php echo $site->url() ?>">
-        <?php echo $site->title() ?>
+      <a href="<?= $site->url() ?>">
+        <?= $site->title() ?>
       </a>
     </h1>
   </header>
@@ -90,8 +90,8 @@ Let's clean this up a bit!
 
 ```php
   <footer>
-    <a href="<?php echo $site->twitter() ?>">Twitter</a>
-    <a href="<?php echo $site->facebook() ?>">Facebook</a>
+    <a href="<?= $site->twitter() ?>">Twitter</a>
+    <a href="<?= $site->facebook() ?>">Facebook</a>
   </footer>
 
 </body>
@@ -104,8 +104,8 @@ Now that we have separated those parts the final template looks very clean:
 <?php snippet('header') ?>
 
   <main>
-    <h1><?php echo $page->title() ?></h1>
-    <?php echo $page->text() ?>
+    <h1><?= $page->title() ?></h1>
+    <?= $page->text() ?>
   </main>
 
 <?php snippet('footer') ?>
@@ -124,7 +124,7 @@ Sometimes it is useful to pass a variable to a snippet.
 With the code above, `/site/snippets/mysnippet.php` will receive a title variable with the content "Hello!":
 
 ```php
-<?php echo $title ?>
+<?= $title ?>
 ```
 
 A more useful case for this is an article list for a blog.
@@ -151,10 +151,10 @@ A more useful case for this is an article list for a blog.
 
 ```php
 <article>
-  <h1><?php echo html($article->title()) ?></h1>
-  <time><?php echo $article->date('d/m/Y') ?></time>
-  <?php echo kirbytext($article->intro()) ?></p>
-  <a href="<?php echo $article->url() ?>">Read more…</a>
+  <h1><?= html($article->title()) ?></h1>
+  <time><?= $article->date('d/m/Y') ?></time>
+  <?= kirbytext($article->intro()) ?></p>
+  <a href="<?= $article->url() ?>">Read more…</a>
 </article>
 ```
 

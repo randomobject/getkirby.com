@@ -25,6 +25,6 @@ Text:
 
 ```php
 <?php if($page->isErrorPage()): ?>
-<?php echo css('assets/css/error.css') ?>
+<?= css('assets/css/error.css') ?>
 <?php endif ?>
 ```

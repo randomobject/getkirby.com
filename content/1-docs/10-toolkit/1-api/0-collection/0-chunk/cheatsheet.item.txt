@@ -35,7 +35,7 @@ Text:
 <?php foreach($chunks as $items): ?>
   <div class="row">
     <?php foreach($items as $item): ?>
-    <article><?php echo $item->title() ?></article>
+    <article><?= $item->title() ?></article>
     <?php endforeach; ?>
   </ul>
 <?php endforeach ?>

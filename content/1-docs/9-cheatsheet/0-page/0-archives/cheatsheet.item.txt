@@ -24,9 +24,9 @@ Text:
 <ul>
   <?php foreach($page->archives() as $archive): ?>
   <li>
-    <a href="<?php echo $archive->url() ?>">
-      <?php echo $archive->filename() ?>
-      (<?php echo $archive->niceSize() ?>)
+    <a href="<?= $archive->url() ?>">
+      <?= $archive->filename() ?>
+      (<?= $archive->niceSize() ?>)
     </a>
   </li>
   <?php endforeach ?>

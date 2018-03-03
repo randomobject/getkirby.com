@@ -67,15 +67,15 @@ a list of all articles.
 
 <section class="content blog">
 
-  <h1><?php echo $page->title()->html() ?></h1>
-  <?php echo $page->text()->kirbytext() ?>
+  <h1><?= $page->title()->html() ?></h1>
+  <?= $page->text()->kirbytext() ?>
 
   <?php foreach($page->children()->visible()->flip() as $article): ?>
 
   <article>
-    <h1><?php echo $article->title()->html() ?></h1>
-    <p><?php echo $article->text()->excerpt(300) ?></p>
-    <a href="<?php echo $article->url() ?>">Read more…</a>
+    <h1><?= $article->title()->html() ?></h1>
+    <p><?= $article->text()->excerpt(300) ?></p>
+    <a href="<?= $article->url() ?>">Read more…</a>
   </article>
 
   <?php endforeach ?>
@@ -103,8 +103,8 @@ our css.
 Next we build the title of our blog and the short description, which we’ve added in `blog.txt`
 
 ```php
-<h1><?php echo $page->title()->html() ?></h1>
-<?php echo $page->text()->kirbytext() ?>
+<h1><?= $page->title()->html() ?></h1>
+<?= $page->text()->kirbytext() ?>
 
 ```
 
@@ -114,9 +114,9 @@ The next few lines of code is a loop, where we build a short version for each ar
 <?php foreach($page->children()->visible()->flip() as $article): ?>
 
 <article>
-  <h1><?php echo $article->title()->html() ?></h1>
-  <p><?php echo $article->text()->excerpt(300) ?></p>
-  <a href="<?php echo $article->url() ?>">Read more…</a>
+  <h1><?= $article->title()->html() ?></h1>
+  <p><?= $article->text()->excerpt(300) ?></p>
+  <a href="<?= $article->url() ?>">Read more…</a>
 </article>
 
 <?php endforeach ?>
@@ -153,9 +153,9 @@ Within the foreach loop, we build the html for each article in our list.
 <?php foreach($page->children()->visible()->flip() as $article): ?>
 
 <article>
-  <h1><?php echo $article->title()->html() ?></h1>
-  <p><?php echo $article->text()->excerpt(300) ?></p>
-  <a href="<?php echo $article->url() ?>">Read more…</a>
+  <h1><?= $article->title()->html() ?></h1>
+  <p><?= $article->text()->excerpt(300) ?></p>
+  <a href="<?= $article->url() ?>">Read more…</a>
 </article>
 
 <?php endforeach ?>
@@ -165,7 +165,7 @@ Within the foreach loop, we build the html for each article in our list.
 Let’s have a close look at the following line:
 
 ```php
-<p><?php echo $article->text()->excerpt(300) ?></p>
+<p><?= $article->text()->excerpt(300) ?></p>
 
 ```
 
@@ -176,7 +176,7 @@ With `$article->text()->excerpt(300)` we get an excerpt with a maximum of 300 ch
 With the next line…
 
 ```php
-<a href="<?php echo $article->url() ?>">Read more…</a>
+<a href="<?= $article->url() ?>">Read more…</a>
 
 ```
 
@@ -199,10 +199,10 @@ The template code for this is very short and easy to understand.
 
 <section class="content blogarticle">
   <article>
-    <h1><?php echo $page->title()->html() ?></h1>
-    <?php echo $page->text()->kirbytext() ?>
+    <h1><?= $page->title()->html() ?></h1>
+    <?= $page->text()->kirbytext() ?>
 
-    <a href="<?php echo url('blog') ?>">Back…</a>
+    <a href="<?= url('blog') ?>">Back…</a>
 
   </article>
 </section>
@@ -218,7 +218,7 @@ The rest is super straight forward. Add the title of your article and the full t
 You might also want to add a back link:
 
 ```php
-<a href="<?php echo url('blog') ?>">Back…</a>
+<a href="<?= url('blog') ?>">Back…</a>
 ```
 
 which will take your visitors back to the article list.
@@ -248,15 +248,15 @@ Now we are going to implement the intro in the blog’s overview loop (instead o
 
 <main class="blog" role="main">
 
-  <h1><?php echo $page->title()->html() ?></h1>
-  <?php echo $page->text()->kirbytext() ?>
+  <h1><?= $page->title()->html() ?></h1>
+  <?= $page->text()->kirbytext() ?>
 
   <?php foreach($page->children()->visible()->flip() as $article): ?>
 
   <article>
-    <h1><?php echo $article->title()->html() ?></h1>
-    <?php echo $article->intro()->kirbytext() ?>
-    <a href="<?php echo $article->url() ?>">Read more…</a>
+    <h1><?= $article->title()->html() ?></h1>
+    <?= $article->intro()->kirbytext() ?>
+    <a href="<?= $article->url() ?>">Read more…</a>
   </article>
 
   <?php endforeach ?>
@@ -274,11 +274,11 @@ Your article template would look like this:
 
 <main class="blogarticle" role="main">
   <article>
-    <h1><?php echo $page->title()->html() ?></h1>
-    <?php echo $page->intro()->kirbytext() ?>
-    <?php echo $page->text()->kirbytext() ?>
+    <h1><?= $page->title()->html() ?></h1>
+    <?= $page->intro()->kirbytext() ?>
+    <?= $page->text()->kirbytext() ?>
 
-    <a href="<?php echo url('blog') ?>">Back…</a>
+    <a href="<?= url('blog') ?>">Back…</a>
 
   </article>
 </main>

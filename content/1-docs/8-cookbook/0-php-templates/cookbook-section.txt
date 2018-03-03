@@ -70,7 +70,7 @@ I know that PHP looks a bit scary in the beginning, when you come from an HTML a
 #### Display a variable
 
 ```php
-<?php echo $page->title() ?>
+<?= $page->title() ?>
 ```
 
 #### If clauses
@@ -87,7 +87,7 @@ Welcome to the home page
 <?php if($page->title() == ''): ?>
 <h1>No title</h1>
 <?php else: ?>
-<h1><?php echo $page->title() ?></h1>
+<h1><?= $page->title() ?></h1>
 <?php endif ?>
 ```
 
@@ -96,7 +96,7 @@ Welcome to the home page
 ```php
 <ul>
   <?php foreach($pages as $p): ?>
-    <li><a href="<?php echo $p->url() ?>"><?php echo $p->title() ?></a></li>
+    <li><a href="<?= $p->url() ?>"><?= $p->title() ?></a></li>
   <?php endforeach ?>
 </ul>
 ```
@@ -113,13 +113,13 @@ Always make sure to use proper indentation. It doesn't really matter if you use 
 ```php
 <html>
   <head>
-    <title><?php echo $site->title() ?></title>
+    <title><?= $site->title() ?></title>
   </head>
   <body>
     <nav>
       <ul>
         <?php foreach($pages as $child): ?>
-          <li><a href="<?php echo $child->url() ?>"><?php echo $child->title() ?></a></li>
+          <li><a href="<?= $child->url() ?>"><?= $child->title() ?></a></li>
         <?php endforeach ?>
       </ul>
     </nav>
@@ -185,7 +185,7 @@ It might be ok to do that inside a function sometimes. But most of the times you
   <nav>
     <ul>
       <?php foreach($page->children() as $child): ?>
-        <li><a href="<?php echo $child->url() ?>"><?php echo $child->title() ?></a></li>
+        <li><a href="<?= $child->url() ?>"><?= $child->title() ?></a></li>
       <?php endforeach ?>
     </ul>
   </nav>
@@ -196,7 +196,7 @@ It might be ok to do that inside a function sometimes. But most of the times you
 
 Since PHP 5.4 the echo "short tag" is permanently enabled, so you can use
 
-`<?=` instead of `<?php echo`
+`<?=` instead of `<?=`
 
 in your templates without having to make any php.ini or .htaccess settings.
 

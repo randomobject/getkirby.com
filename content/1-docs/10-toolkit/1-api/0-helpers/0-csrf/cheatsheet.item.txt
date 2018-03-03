@@ -6,7 +6,7 @@ Excerpt: Generates and checks CSRF tokens
 
 ----
 
-Params: - 
+Params: -
   name: $check
   type: string
   text: Token to check, will return boolean if set
@@ -27,7 +27,7 @@ Text:
 ### Token generation
 
 ```php
-<input type="hidden" name="csrf" value="<?php echo csrf() ?>">
+<input type="hidden" name="csrf" value="<?= csrf() ?>">
 ```
 
 ### Checking the token

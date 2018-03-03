@@ -25,5 +25,5 @@ Text:
 ## Example
 
 ```php
-<?php echo widont($page->title()) ?>
+<?= widont($page->title()) ?>
 ```

@@ -23,7 +23,7 @@ Text:
 <h2>Songs</h2>
 <?php foreach($page->audio() as $audio): ?>
 <audio controls>
-  <source src="<?php echo $audio->url() ?>" type="<?php echo $audio->mime() ?>">
+  <source src="<?= $audio->url() ?>" type="<?= $audio->mime() ?>">
 </audio>
 <?php endforeach ?>
 ```

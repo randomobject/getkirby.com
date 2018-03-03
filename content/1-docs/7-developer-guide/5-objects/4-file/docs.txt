@@ -31,7 +31,7 @@ This example shows the basic architecture of a file method. You define the metho
 In some cases it might be helpful to be able to pass arguments to the method:
 
 ```php
-<?php echo $file->soSomething('shiny') ?>
+<?= $file->soSomething('shiny') ?>
 ```
 
 The definition for such a method with arguments is very simple:

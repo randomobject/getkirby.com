@@ -48,7 +48,7 @@ If you want to make it possible to chain page methods and that the page can be f
 #### Example
 
 ```php
-<?php echo $page->likeIt()->hide() ?>
+<?= $page->likeIt()->hide() ?>
 ```
 
 ### 2. Returning info about the page
@@ -74,7 +74,7 @@ The page has 5 siblings.
 In some cases it might be helpful to be able to pass arguments to the method:
 
 ```php
-<?php echo $page->isSiblingOf($otherPage) ?>
+<?= $page->isSiblingOf($otherPage) ?>
 ```
 
 The definition for such a method with arguments is very simple:

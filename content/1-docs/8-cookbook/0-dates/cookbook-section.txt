@@ -46,7 +46,7 @@ Make sure the format you use for your date is parsable by php. Anything like `dd
 `Date` is a predefined keyword, so Kirby will automatically take care of parsing the content of that field as a date and give you nice shortcuts to handle it in your templates.
 
 ```php
-<?php echo $page->date('Y-m-d') ?>
+<?= $page->date('Y-m-d') ?>
 ```
 
 This will do the same as the example above – just in one line. As an argument you can pass any valid (link: http://php.net/manual/en/function.date.php text: php date format string). If you don't pass any string the function will return a unix timestamp, which you can use to make some more fancy php date calculation stuff.
@@ -58,10 +58,10 @@ So if we take a look at our blog article template, it is very easy to include a 
 ```php
 <article>
 
-  <h1><?php echo $article->title()->html() ?></h1>
-  <?php echo $article->text()->kirbytext() ?>
+  <h1><?= $article->title()->html() ?></h1>
+  <?= $article->text()->kirbytext() ?>
 
-  <time datetime="<?php echo $page->date('c') ?>" pubdate="pubdate"><?php echo $page->date('d.m.Y H:i') ?></time>
+  <time datetime="<?= $page->date('c') ?>" pubdate="pubdate"><?= $page->date('d.m.Y H:i') ?></time>
 
 </article>
 

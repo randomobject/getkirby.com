@@ -24,11 +24,11 @@ Text:
 ### Fetching the current page
 
 ```php
-<?php echo $site->page()->title() ?>
+<?= $site->page()->title() ?>
 ```
 
 ### Fetching any subpage
 
 ```php
-<?php echo $site->page('some/sub/page/deep/down')->title() ?>
+<?= $site->page('some/sub/page/deep/down')->title() ?>
 ```

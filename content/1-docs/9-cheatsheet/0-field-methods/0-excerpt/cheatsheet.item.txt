@@ -20,9 +20,9 @@ Text:
 ```php
 <?php foreach($page->children()->visible() as $article): ?>
 <article>
-  <h1><?php echo $article->title()->html() ?></h1>
-  <p><?php echo $article->excerpt(300) ?></p>
-  <p><a href="<?php echo $article->url() ?>">Read more…</a></p>
+  <h1><?= $article->title()->html() ?></h1>
+  <p><?= $article->excerpt(300) ?></p>
+  <p><a href="<?= $article->url() ?>">Read more…</a></p>
 </article>
 <?php endforeach ?>
 ```
@@ -32,5 +32,5 @@ Text:
 The excerpt method supports to modes of creating an excerpt: The default one is based on a number of characters. The second mode is to create an excerpt based on the number of words:
 
 ```php
-<?php echo $page->text()->excerpt(100, 'words'); ?>
+<?= $page->text()->excerpt(100, 'words'); ?>
 ```

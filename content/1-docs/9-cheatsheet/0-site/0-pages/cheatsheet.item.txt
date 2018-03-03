@@ -25,7 +25,7 @@ Text:
 <nav class="main-menu" role="navigation">
   <ul>
     <?php foreach($site->pages()->visible() as $item): ?>
-    <li><a<?php e($item->isOpen(), ' class="active"') ?> href="<?php echo $item->url() ?>"><?php echo html($item->title()) ?></a></li>
+    <li><a<?php e($item->isOpen(), ' class="active"') ?> href="<?= $item->url() ?>"><?= html($item->title()) ?></a></li>
     <?php endforeach ?>
   </ul>
 </nav>

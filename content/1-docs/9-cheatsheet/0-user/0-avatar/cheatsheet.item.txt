@@ -21,7 +21,7 @@ Text:
 
 ```php
 <?php if($avatar = $site->user('bastian')->avatar()): ?>
-<img src="<?php echo $avatar->url() ?>" alt="Bastian's avatar">
+<img src="<?= $avatar->url() ?>" alt="Bastian's avatar">
 <?php endif ?>
 ```
 

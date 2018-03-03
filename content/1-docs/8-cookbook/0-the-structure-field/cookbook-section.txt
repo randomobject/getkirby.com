@@ -115,20 +115,20 @@ $events = $page->events()->yaml();
 
 foreach($events as $event): ?>
 
-  <h1><?php echo $event['event_title'] ?></h1>
-  <p><?php echo date('Y-m-d', strtotime($event['event_date'])) ?></p>
-  <p><?php echo $event['event_location'] ?></p>
+  <h1><?= $event['event_title'] ?></h1>
+  <p><?= date('Y-m-d', strtotime($event['event_date'])) ?></p>
+  <p><?= $event['event_location'] ?></p>
   <?php if($image = $page->image($event['event_image'])) echo $image->html() ?>
 
 <?php endforeach ?>
 ```
 
-When we output the values of the array, we deal with strings, not with an object. We therefore have to use the `html()` or `kirbytext()` helpers, and cannot use object notation. So this would **not** work: `<?php echo $event['event_title']->html() ?>`.
+When we output the values of the array, we deal with strings, not with an object. We therefore have to use the `html()` or `kirbytext()` helpers, and cannot use object notation. So this would **not** work: `<?= $event['event_title']->html() ?>`.
 
 Now, what's happening in the following line?
 
 ```php
-<?php echo date('Y-m-d', strtotime($event['event_date'])) ?>
+<?= date('Y-m-d', strtotime($event['event_date'])) ?>
 ```
 
 The `strtotime()` function turns our date from the content file into a UNIX timestamp, which we can pass to the [PHP `date()` function](http://php.net/manual/en/function.date.php) to format the date.
@@ -143,7 +143,7 @@ We check if the image exists first, and only then we echo it. If you want more c
 
 ```php
 <?php if($image = $page->image($event['event_image'])): ?>
-  <img class="some-class" src="<?php echo $image->url() ?>">
+  <img class="some-class" src="<?= $image->url() ?>">
 <?php endif ?>
 ```
 
@@ -180,9 +180,9 @@ $events = $page->events()->toStructure();
 // loop through the collection of events:
 foreach($events as $event): ?>
 
-  <h1><?php echo $event->event_title()->html() ?></h1>
-  <p><?php echo date('Y-m-d', strtotime($event->event_date())) ?></p>
-  <p><?php echo $event->event_location()->html() ?></p>
+  <h1><?= $event->event_title()->html() ?></h1>
+  <p><?= date('Y-m-d', strtotime($event->event_date())) ?></p>
+  <p><?= $event->event_location()->html() ?></p>
   <?php if($image = $event->event_image()->toFile()) echo $image->html() ?>
 
 <?php endforeach ?>

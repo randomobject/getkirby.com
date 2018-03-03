@@ -24,7 +24,7 @@ Text:
 ```php
 <ul>
   <?php foreach($page->files()->pluck('filename') as $filename): ?>
-  <li><?php echo html($filename) ?></li>
+  <li><?= html($filename) ?></li>
   <?php endforeach ?>
 </ul>
 ```

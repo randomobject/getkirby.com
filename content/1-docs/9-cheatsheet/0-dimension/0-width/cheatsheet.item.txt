@@ -22,5 +22,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->image()->width() ?>
+<?= $page->image()->width() ?>
 ```

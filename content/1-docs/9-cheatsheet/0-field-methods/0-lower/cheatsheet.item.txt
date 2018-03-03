@@ -18,5 +18,5 @@ Text:
 ## Example
 
 ```php
-<h1><?php echo $page->title()->lower()->html() ?></h1>
+<h1><?= $page->title()->lower()->html() ?></h1>
 ```

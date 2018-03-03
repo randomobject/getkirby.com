@@ -26,5 +26,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $site->user('bastian')->textfile() ?>
+<?= $site->user('bastian')->textfile() ?>
 ```

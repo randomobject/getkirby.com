@@ -22,5 +22,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->files()->findBy('name', 'myfile')->url() ?>
+<?= $page->files()->findBy('name', 'myfile')->url() ?>
 ```

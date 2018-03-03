@@ -18,5 +18,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->documentation()->toFile()->filename(); ?>
+<?= $page->documentation()->toFile()->filename(); ?>
 ```

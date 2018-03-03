@@ -69,13 +69,13 @@ Meta data is instantly available from the `$file` object in your templates and s
 ```php
 <?php if($image = $page->image('lake.jpg')): ?>
 <figure>
-  <img src="<?php echo $image->url() ?>" alt="<?php echo html($image->title()) ?>">
+  <img src="<?= $image->url() ?>" alt="<?= html($image->title()) ?>">
   <figcaption>
     <span class="caption">
-      <?php echo html($image->caption()) ?>
+      <?= html($image->caption()) ?>
     </span>
     <span class="photographer">
-      <?php echo html($image->photographer()) ?>
+      <?= html($image->photographer()) ?>
     </span>
   </figcaption>
 </figure>

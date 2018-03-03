@@ -24,7 +24,7 @@ Text:
 ### Fetch a single file
 
 ```php
-<?php echo $page->files()->find('myfile.pdf')->url() ?>
+<?= $page->files()->find('myfile.pdf')->url() ?>
 ```
 
 ### Fetch multiple files
@@ -33,8 +33,8 @@ Text:
 <ul>
   <?php foreach($page->files()->find('document-a.pdf', 'document-b.pdf', 'document-c.pdf') as $file): ?>
   <li>
-    <a href="<?php echo $file->url() ?>">
-      <?php echo html($file->filename()) ?>
+    <a href="<?= $file->url() ?>">
+      <?= html($file->filename()) ?>
     </a>
   </li>
   <?php endforeach ?>

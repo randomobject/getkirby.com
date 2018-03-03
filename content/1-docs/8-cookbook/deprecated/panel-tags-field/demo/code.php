@@ -26,14 +26,14 @@ sort($data);
 </p>
 <p>
   <code>
-  <?php echo implode(', ', $data) ?>
+  <?= implode(', ', $data) ?>
   </code>
 </p>
 
 <script type="text/javascript">
 $(function() {
   $('#tags').tagbox({
-    url : <?php echo json_encode((array)$data) ?>, 
+    url : <?= json_encode((array)$data) ?>, 
     lowercase : true
   });
 });

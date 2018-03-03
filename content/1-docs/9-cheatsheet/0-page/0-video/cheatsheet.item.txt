@@ -36,7 +36,7 @@ Text:
 
 ```php
 <?php if($video = $page->video()): ?>
-<img src="<?php echo $video->url() ?>" alt="">
+<img src="<?= $video->url() ?>" alt="">
 <?php endif ?>
 ```
 
@@ -44,6 +44,6 @@ Text:
 
 ```php
 <?php if($video = $page->video('myimage.m4v')): ?>
-<?php echo $video->url() ?>
+<?= $video->url() ?>
 <?php endif ?>
 ```

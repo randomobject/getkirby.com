@@ -33,11 +33,11 @@ If a $lang parameter is specified (multi-language site only), the specific langu
 ### Fetching the base URL for the site
 
 ```php
-<?php echo $site->url() ?>
+<?= $site->url() ?>
 ```
 
 ### Fetching the base URL for a language
 
 ```php
-<?php echo $site->url('en') ?>
+<?= $site->url('en') ?>
 ```

@@ -35,8 +35,8 @@ Text:
 <ul>
   <?php foreach($page->related()->pages() as $related): ?>
   <li>
-    <a href="<?php echo $related->url() ?>">
-      <?php echo $related->title()->html() ?>
+    <a href="<?= $related->url() ?>">
+      <?= $related->title()->html() ?>
     </a>
   </li>
   <?php endforeach ?>

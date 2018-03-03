@@ -21,7 +21,7 @@ Text:
 
 ```php
 <?php foreach($pages->files() as $file) : ?>
-<img src="<?php echo $file->url() ?>">
+<img src="<?= $file->url() ?>">
 <?php endforeach ?>
 ```
 

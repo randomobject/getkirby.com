@@ -25,7 +25,7 @@ Text:
 
 ```php
 <?php if($image = $site->image()): ?>
-<img src="<?php echo $image->url() ?>" alt="">
+<img src="<?= $image->url() ?>" alt="">
 <?php endif ?>
 ```
 
@@ -33,6 +33,6 @@ Text:
 
 ```php
 <?php if($image = $site->image('myimage.jpg')): ?>
-<img src="<?php echo $image->url() ?>" alt="">
+<img src="<?= $image->url() ?>" alt="">
 <?php endif ?>
 ```

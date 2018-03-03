@@ -31,6 +31,6 @@ Method only exists for multi-language sites.
 ## Example
 
 ```php
-<?php echo $page->urlKey() ?>
+<?= $page->urlKey() ?>
 
 ```

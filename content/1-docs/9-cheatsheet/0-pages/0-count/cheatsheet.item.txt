@@ -25,7 +25,7 @@ Text:
 
 ```php
 The site has
-<?php echo {{class.instance}}->count() ?>
+<?= {{class.instance}}->count() ?>
 main pages
 ```
 
@@ -33,7 +33,7 @@ main pages
 
 ```php
 This page has
-<?php echo $page->children()->count() ?>
+<?= $page->children()->count() ?>
 subpages
 ```
 
@@ -41,6 +41,6 @@ subpages
 
 ```php
 The site has
-<?php echo $site->index()->count() ?>
+<?= $site->index()->count() ?>
 pages in total
 ```

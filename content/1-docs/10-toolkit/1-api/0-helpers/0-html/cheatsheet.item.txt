@@ -31,11 +31,11 @@ Text:
 ### With a single option
 
 ```php
-<?php echo html($page->title()) ?>
+<?= html($page->title()) ?>
 ```
 
 ### Don't preserve HTML tags
 
 ```php
-<?php echo html($page->title(), false) ?>
+<?= html($page->title(), false) ?>
 ```

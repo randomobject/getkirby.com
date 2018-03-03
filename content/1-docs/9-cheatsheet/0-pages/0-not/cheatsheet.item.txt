@@ -33,8 +33,8 @@ Text:
 <ul>
   <?php foreach($page->children()->not('project-b') as $subpage): ?>
   <li>
-    <a href="<?php echo $subpage->url() ?>">
-      <?php echo $subpage->title()->html() ?>
+    <a href="<?= $subpage->url() ?>">
+      <?= $subpage->title()->html() ?>
     </a>
   </li>
   <?php endforeach ?>
@@ -51,8 +51,8 @@ You can now pass a collection as argument as well:
   $excluded = $page->children()->filterBy('template', 'some_template');
   foreach($page->children()->not($excluded) as $subpage): ?>
   <li>
-    <a href="<?php echo $subpage->url() ?>">
-      <?php echo $subpage->title()->html() ?>
+    <a href="<?= $subpage->url() ?>">
+      <?= $subpage->title()->html() ?>
     </a>
   </li>
   <?php endforeach ?>

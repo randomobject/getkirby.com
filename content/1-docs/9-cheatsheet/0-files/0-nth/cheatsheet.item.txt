@@ -22,5 +22,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->files()->nth(3)->filename() ?>
+<?= $page->files()->nth(3)->filename() ?>
 ```

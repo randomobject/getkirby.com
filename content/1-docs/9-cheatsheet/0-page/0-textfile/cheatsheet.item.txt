@@ -32,5 +32,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->textfile() ?>
+<?= $page->textfile() ?>
 ```

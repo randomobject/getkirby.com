@@ -21,5 +21,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $site->user('bastian')->avatarRoot() ?>
+<?= $site->user('bastian')->avatarRoot() ?>
 ```

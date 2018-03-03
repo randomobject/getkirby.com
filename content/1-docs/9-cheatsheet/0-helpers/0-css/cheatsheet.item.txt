@@ -31,13 +31,13 @@ Text:
 ### Creating a single link tag
 
 ```php
-<?php echo css('assets/css/site.css') ?>
+<?= css('assets/css/site.css') ?>
 ```
 
 ### Creating multiple link tags
 
 ```php
-<?php echo css(array(
+<?= css(array(
   'assets/css/site.css',
   'assets/css/form.css',
   'assets/css/grid.css'
@@ -48,7 +48,7 @@ Text:
 ### Autoloading template specific css files
 
 ```php
-<?php echo css('@auto') ?>
+<?= css('@auto') ?>
 ```
 
 Template specific css files must be located in `/assets/css/templates` and named like the template.
@@ -64,7 +64,7 @@ Template                    | CSS file
 You can also specify a media attribute for the link tags:
 
 ```php
-<?php echo css('assets/css/print.css', 'print') ?>
+<?= css('assets/css/print.css', 'print') ?>
 ```
 
 <since v="2.5.2">
@@ -73,6 +73,6 @@ You can also specify a media attribute for the link tags:
 You can also pass an array of completely custom attributes:
 
 ```php
-<?php echo css('assets/css/print.css', ['media' => 'print', 'data-something' => 'my-value']) ?>
+<?= css('assets/css/print.css', ['media' => 'print', 'data-something' => 'my-value']) ?>
 ```
 </since>

@@ -18,5 +18,5 @@ Text:
 ## Example
 
 ```php
-<?php echo kirby()->roots()->widgets() ?>
+<?= kirby()->roots()->widgets() ?>
 ```

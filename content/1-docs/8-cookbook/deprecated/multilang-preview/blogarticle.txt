@@ -117,7 +117,7 @@ l::set('cancel', 'abbrechen');
 You can now use them in your templates, snippets and plugins like this:
 
 ```php
-<?php echo l::get('next') ?>
+<?= l::get('next') ?>
 
 ```
 

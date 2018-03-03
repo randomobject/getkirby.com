@@ -31,11 +31,11 @@ Text:
 ### Fetching an image of the current page
 
 ```php
-<?php echo image('forrest.jpg')->url() ?>
+<?= image('forrest.jpg')->url() ?>
 ```
 
 ### Fetching an image from any other page
 
 ```php
-<?php echo image('projects/project-a/forrest.jpg')->url() ?>
+<?= image('projects/project-a/forrest.jpg')->url() ?>
 ```

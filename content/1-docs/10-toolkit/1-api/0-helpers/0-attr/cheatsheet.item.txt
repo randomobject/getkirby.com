@@ -6,7 +6,7 @@ Excerpt: Creates attributes for an HTML tag
 
 ----
 
-Params: - 
+Params: -
   name: $name
   type: string or array
   text: One attr name or an associative array with multiple attr names and values
@@ -29,7 +29,7 @@ Text:
 ## Example
 
 ```php
-<img<?php echo attr(array(
+<img<?= attr(array(
   'src'    => 'http://yourdomain.com/someimage.jpg',
   'width'  => 300,
   'height' => 200,

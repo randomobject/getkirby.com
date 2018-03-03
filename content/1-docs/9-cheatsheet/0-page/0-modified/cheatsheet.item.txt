@@ -29,5 +29,5 @@ Text:
 ## Example
 
 ```php
-Last update: <?php echo $page->modified('d/m/Y H:i') ?>
+Last update: <?= $page->modified('d/m/Y H:i') ?>
 ```

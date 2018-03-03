@@ -24,9 +24,9 @@ Text:
 ```php
 <select onchange="window.location.href = this.value">
 <?php foreach($site->index() as $p): ?>
-<option value="<?php echo $p->url() ?>">
-  <?php echo str_repeat('-', $p->depth()) ?>
-  <?php echo html($p->title()) ?>
+<option value="<?= $p->url() ?>">
+  <?= str_repeat('-', $p->depth()) ?>
+  <?= html($p->title()) ?>
 </option>
 <?php endforeach ?>
 </select>

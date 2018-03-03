@@ -34,8 +34,8 @@ Text:
 
 ```php
 // Limit to 300 characters
-<?php echo excerpt($page->text(), 300) ?>
+<?= excerpt($page->text(), 300) ?>
 
 // Limit to 20 words
-<?php echo excerpt($page->text(), 20, 'words') ?>
+<?= excerpt($page->text(), 20, 'words') ?>
 ```

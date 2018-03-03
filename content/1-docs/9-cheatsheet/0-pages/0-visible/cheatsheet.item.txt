@@ -26,8 +26,8 @@ Text:
 <ul>
   <?php foreach($page->children()->visible() as $subpage): ?>
   <li>
-    <a href="<?php echo $subpage->url() ?>">
-      <?php echo html($subpage->title()) ?>
+    <a href="<?= $subpage->url() ?>">
+      <?= html($subpage->title()) ?>
     </a>
   </li>
   <?php endforeach ?>

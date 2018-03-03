@@ -26,9 +26,9 @@ Text:
 <ul>
   <?php foreach($page->files() as $file): ?>
   <li>
-    <a href="<?php echo $file->url() ?>">
-      <?php echo $file->filename() ?>
-      (<?php echo $file->niceSize() ?>)
+    <a href="<?= $file->url() ?>">
+      <?= $file->filename() ?>
+      (<?= $file->niceSize() ?>)
     </a>
   </li>
   <?php endforeach ?>

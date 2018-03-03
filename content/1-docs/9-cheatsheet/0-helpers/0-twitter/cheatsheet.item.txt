@@ -39,11 +39,11 @@ Text:
 ### Without link text
 
 ```php
-<?php echo twitter('getkirby') ?>
+<?= twitter('getkirby') ?>
 ```
 
 ### With link text
 
 ```php
-<?php echo twitter('getkirby', 'Follow Kirby on Twitter') ?>
+<?= twitter('getkirby', 'Follow Kirby on Twitter') ?>
 ```

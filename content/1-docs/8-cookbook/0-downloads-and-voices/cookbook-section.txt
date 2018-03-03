@@ -65,7 +65,7 @@ To build a list of quotes, I added a new invisible `voices` folder, which contai
 I'm using the Twitter API to fetch the picture for each user, so I don't need to store them on the Kirby server:
 
 ```php
-<a href="http://twitter.com/<?php echo $voice->username() ?>"><img src="http://twitter.com/api/users/profile_image/<?php echo $voice->username() ?>" /></a>
+<a href="http://twitter.com/<?= $voice->username() ?>"><img src="http://twitter.com/api/users/profile_image/<?= $voice->username() ?>" /></a>
 ```
 
 But before I wanted to launch that new section, I wanted to ask all quoted Twitter users if it is ok for them if I quote them there. So I prepared all quotes and built a little unpublished and preliminary page where they can see their quote and sent them the link.

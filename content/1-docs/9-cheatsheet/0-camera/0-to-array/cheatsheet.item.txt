@@ -22,5 +22,5 @@ Text:
 ## Example
 
 ```php
-<?php echo $page->image()->exif()->camera()->toArray() ?>
+<?= $page->image()->exif()->camera()->toArray() ?>
 ```

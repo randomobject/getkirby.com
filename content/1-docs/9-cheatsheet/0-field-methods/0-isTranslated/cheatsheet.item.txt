@@ -26,7 +26,7 @@ A field value is considered as translated if it is not empty and is not equal to
 ```php
 <?php if($page->description()->isTranslated()): ?>
   <h2>Description</h2>
-  <?php echo $page->description()->kirbytext() ?>
+  <?= $page->description()->kirbytext() ?>
 <?php endif ?>
 ```
 
