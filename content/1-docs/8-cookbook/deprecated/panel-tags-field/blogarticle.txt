@@ -40,9 +40,9 @@ You could simply just create a new field plugin there, but there's a better way!
 
 (image: panel-fields.png)
 
-That way, you never have to touch the core of the panel and you can add as many project-specific fields as you need.
+That way, you never have to touch the core of the Panel and you can add as many project-specific fields as you need.
 
-There's no documentation for creating your own fields yet, but I suggest you simply take existing fields from the panel as inspiration for your own creations. With a little knowledge about PHP/HTML/CSS & JS you should be fine. Docs will follow later.
+There's no documentation for creating your own fields yet, but I suggest you simply take existing fields from the Panel as inspiration for your own creations. With a little knowledge about PHP/HTML/CSS & JS you should be fine. Docs will follow later.
 
 ## The new tags field
 

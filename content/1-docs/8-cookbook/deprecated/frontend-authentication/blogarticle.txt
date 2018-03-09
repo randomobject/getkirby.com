@@ -121,7 +121,7 @@ Now you have a working logout page available at:
 
 We don't have a working account yet, so you will be disappointed by the unfriendly "Invalid username or password" message when trying the login form.
 
-Creating accounts for your website works exactly like creating (link: docs/panel/accounts text: accounts for the panel), except they are located in your site folder and not in site/panel.
+Creating accounts for your website works exactly like creating (link: docs/panel/accounts text: accounts for the Panel), except they are located in your site folder and not in site/panel.
 
 Create a new `site/accounts` folder and add your first `demo.php` account file. Account files must always be named like the username of that account. So don't use any special characters or other fancy stuff in those file names.
 
@@ -271,7 +271,7 @@ Auth::firewall(array(
 
 ```
 
-This will automatically pass your firewall settings from your content files to your template. Of course this can easily be added to a panel blueprint and here you go with full permission control in just a few simple steps.
+This will automatically pass your firewall settings from your content files to your template. Of course this can easily be added to a Panel blueprint and here you go with full permission control in just a few simple steps.
 
 
 ## The User Object
@@ -334,29 +334,3 @@ You can also use the `Auth::user()` method to show or hide parts in your templat
 ## Final thoughts
 
 This is just a rough overview of things you can do with the new Authentication plugin. It's more a toolbelt than a ready-made solution and so I can only recommend to play with it and start your own experiments. I'm very excited to hear your thoughts and see the first protected Kirby sites coming up.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -24,7 +24,7 @@ if(v::in('A', array('A', 'B', 'C'))) {
 
 ```
 
-## In panel fields
+## In fields
 
 ```
 fields:

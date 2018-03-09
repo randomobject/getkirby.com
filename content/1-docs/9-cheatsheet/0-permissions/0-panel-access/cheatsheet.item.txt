@@ -12,7 +12,7 @@ Excerpt: Permission to access the Panel
 
 Text:
 
-By setting panel.access to false, you can define roles which can't login to the Panel at all. This is useful if you need frontend user roles which can do various things on your site based on their logged in state, but are not able to edit anything in the Panel.
+By setting `panel.access` to false, you can define roles which can't login to the Panel at all. This is useful if you need frontend user roles which can do various things on your site based on their logged in state, but are not able to edit anything in the Panel.
 
 ## Example
 

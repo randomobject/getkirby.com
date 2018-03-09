@@ -24,7 +24,7 @@ if(v::notIn('A', array('B', 'C', 'D'))) {
 
 ```
 
-## In panel fields
+## In fields
 
 ```
 fields:

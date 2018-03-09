@@ -10,7 +10,7 @@ Text:
 
 (toc)
 
-The Kirby panel has a simple user management section, which makes it possible to add any number of panel users and edit their account data.
+The Kirby Panel has a simple user management section, which makes it possible to add any number of Panel users and edit their account data.
 
 ## Creating a new user
 
@@ -34,19 +34,19 @@ You can create custom fields for the user management section on a per role basis
 
 ```
 # site/blueprints/users/admin.yml
-fields: 
-  twitter: 
+fields:
+  twitter:
     label: Twitter
     type: text
     placeholder: @username
     icon: twitter
     width: 1/2
-  github: 
+  github:
     label: Github
     type: text
     placeholder: Github username
     icon: github
-    width: 1/2  
+    width: 1/2
 ```
 
 You can easily access you new custom fields in your templates:

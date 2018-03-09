@@ -12,7 +12,7 @@ Excerpt: Permission to access the user management
 
 Text:
 
-You can entirely block access to the user management in the panel. This will also hide the "Users" menu item. 
+You can entirely block access to the user management in the Panel. This will also hide the "Users" menu item. 
 
 ## Example
 
@@ -29,4 +29,3 @@ return [
   ]
 ];
 ```
-

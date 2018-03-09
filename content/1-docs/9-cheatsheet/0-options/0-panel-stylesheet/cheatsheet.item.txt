@@ -2,11 +2,11 @@ Title: panel.stylesheet
 
 ----
 
-Excerpt: Set a custom stylesheet for the panel, which will be loaded after all the default styles.
+Excerpt: Set a custom stylesheet for the Panel, which will be loaded after all the default styles.
 
 ----
 
-Text: 
+Text:
 
 You can define your own custom stylesheet to make some small changes or adjust the branding for your clients.
 

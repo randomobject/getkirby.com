@@ -24,7 +24,7 @@ if(v::alphanum($input)) {
 
 ```
 
-## In panel fields
+## In fields
 
 ```
 fields:

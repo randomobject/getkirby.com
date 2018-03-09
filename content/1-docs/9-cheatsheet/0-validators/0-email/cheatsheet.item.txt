@@ -24,7 +24,7 @@ if(v::email('bastian@getkirby.com')) {
 
 ```
 
-## In panel fields
+## In fields
 
 ```
 fields:

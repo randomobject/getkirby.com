@@ -14,19 +14,19 @@ Text:
 
 We constantly improve the code and security of Kirby with every update. Please always make sure to update to the latest version in order to fix possible issues and vulnerabilities.
 
-Please follow these (link: docs/installation/updates text: instructions how to update your installation). 
+Please follow these (link: docs/installation/updates text: instructions how to update your installation).
 
 ### How to find your current version number
 
-Your Kirby installation has three components: 
+Your Kirby installation has three components:
 
 1. the core: `/kirby`
-2. the toolkit: `/kirby/toolkit`
-3. the panel: `/panel`
+2. the Toolkit: `/kirby/toolkit`
+3. the Panel: `/panel`
 
-If you use the panel and your version is 2.1 or newer you can find all the version numbers of the three components in your panel under `Site options`
+If you use the Panel and your version is 2.1 or newer you can find all the version numbers of the three components in your Panel under `Site options`
 
-You can also find them in the core in the following files: 
+You can also find them in the core in the following files:
 
 1. `/kirby/kirby.php`
 2. `/kirby/toolkit/lib/toolkit.php`
@@ -34,34 +34,34 @@ You can also find them in the core in the following files:
 
 ## Secure your server
 
-Your server's security is essential for the security of your website and data as well as Kirby's security. Please make sure that you work together with experienced system administrators and hosting partners who keep your server up to date and know how to protect it against external attacks. Don't try to setup your own server if you don't exactly know what you are doing. 
+Your server's security is essential for the security of your website and data as well as Kirby's security. Please make sure that you work together with experienced system administrators and hosting partners who keep your server up to date and know how to protect it against external attacks. Don't try to setup your own server if you don't exactly know what you are doing.
 
 ### Connecting with your server
 
-Unfortunately many cheap hosting providers still offer normal FTP accounts for their customers. This is a horrible idea. Always make sure that you only connect to your server with a secured connection (SFTP, SSH) A regular FTP connection submits your password in plaintext over the network. It's very easy to get access to your password that way. 
+Unfortunately many cheap hosting providers still offer normal FTP accounts for their customers. This is a horrible idea. Always make sure that you only connect to your server with a secured connection (SFTP, SSH) A regular FTP connection submits your password in plaintext over the network. It's very easy to get access to your password that way.
 
 ### HTTPS
 
 We can only encourage you to use an SSL certificate for your domain. Nowadays it is very easy to get a free certificate from [Let's Encrypt](https://letsencrypt.org/), which even offers easy installation and updates.
 
-Especially for the panel, an encrypted connection between your browser and your server is very important. If you configure it yourself, make sure to use a strong configuration. Tools and guides like the [Mozilla SSL Configuration Generator](https://mozilla.github.io/server-side-tls/ssl-config-generator/) can help you with this. At the end you can test your configuration at [SSLLabs](https://www.ssllabs.com/)
-If you do not use HTTPS your login information and all other data will be submitted in plain text to the server and can be intercepted. 
+Especially for the Panel, an encrypted connection between your browser and your server is very important. If you configure it yourself, make sure to use a strong configuration. Tools and guides like the [Mozilla SSL Configuration Generator](https://mozilla.github.io/server-side-tls/ssl-config-generator/) can help you with this. At the end you can test your configuration at [SSLLabs](https://www.ssllabs.com/)
+If you do not use HTTPS your login information and all other data will be submitted in plain text to the server and can be intercepted.
 
 ### Use the latest stable PHP version
 
-Many providers unfortunately still offer very old PHP versions, which are no longer maintained. Do yourself and your site a favor and always update to the latest stable PHP version. This comes with additional security and often performance benefits. If your provider does not provide a new and stable PHP version it's a good sign to switch to a better provider. 
+Many providers unfortunately still offer very old PHP versions, which are no longer maintained. Do yourself and your site a favor and always update to the latest stable PHP version. This comes with additional security and often performance benefits. If your provider does not provide a new and stable PHP version it's a good sign to switch to a better provider.
 
 ## Passwords
 
-Use very long passwords for the connection to your server and for your panel logins! Try to convince your clients to use something more secure than `123456789` as well. Short passwords can be hacked by a brute-force attack within seconds. They are no longer a viable protection. Also make sure to use different passwords for different sites and tools. Never use the same password more than once. The panel helps you with long and secure password suggestion on installation and in the user account management. 
+Use very long passwords for the connection to your server and for your Panel logins! Try to convince your clients to use something more secure than `123456789` as well. Short passwords can be hacked by a brute-force attack within seconds. They are no longer a viable protection. Also make sure to use different passwords for different sites and tools. Never use the same password more than once. The Panel helps you with long and secure password suggestion on installation and in the user account management.
 
 ## Blocked folders and files
 
-Kirby's default htaccess file for Apache comes with a set of predefined rules to block external access to certain files and folders in order to secure them. If you run your own htaccess file with your own set of rules, or you use another server architecture such as Nginx, make sure to block the same files and folders with your setup. 
+Kirby's default htaccess file for Apache comes with a set of predefined rules to block external access to certain files and folders in order to secure them. If you run your own htaccess file with your own set of rules, or you use another server architecture such as Nginx, make sure to block the same files and folders with your setup.
 
 ### Text files in your content folder
 
-All text files within the content folder should not be accessible from the outside. Kirby's `.htaccess file uses the following rule to achieve this: 
+All text files within the content folder should not be accessible from the outside. Kirby's `.htaccess file uses the following rule to achieve this:
 
 ```
 RewriteRule ^content/(.*)\.(txt|md|mdown)$ index.php [L]
@@ -77,17 +77,17 @@ All your files within the site folder must be protected as well. Kirby's rule fo
 RewriteRule ^site/(.*) index.php [L]
 ```
 
-You can check if this block works by browsing to http://yourdomain.com/site/config/config.php. If everything is correct you will be redirected to the error page. 
+You can check if this block works by browsing to http://yourdomain.com/site/config/config.php. If everything is correct you will be redirected to the error page.
 
 ### Your kirby folder
 
-Last but not least your kirby folder must be protected as well. Here's the rule: 
+Last but not least your kirby folder must be protected as well. Here's the rule:
 
 ```
 RewriteRule ^kirby/(.*) index.php [L]
 ```
 
-By browsing to http://yourdomain.com/kirby/kirby.php you can make sure that you will be correctly redirected to the error page. 
+By browsing to http://yourdomain.com/kirby/kirby.php you can make sure that you will be correctly redirected to the error page.
 
 ## Prevent directory listings
 
@@ -99,11 +99,11 @@ Options -Indexes
 
 ## File Permissions
 
-Never set the file permissions on your server too open (777). Especially on a shared hosting environment, other users could get access to important files of your site and overwrite or read them. 
+Never set the file permissions on your server too open (777). Especially on a shared hosting environment, other users could get access to important files of your site and overwrite or read them.
 
-We are working on our own dedicated docs on secure file permissions, but you can find an excellent introduction into (link: http://www.smashingmagazine.com/2014/05/proper-wordpress-filesystem-permissions-ownerships text: secure file permissions for Wordpress on Smashing Magazine). Those instructions can be applied to a Kirby installation as well. 
+We are working on our own dedicated docs on secure file permissions, but you can find an excellent introduction into (link: http://www.smashingmagazine.com/2014/05/proper-wordpress-filesystem-permissions-ownerships text: secure file permissions for Wordpress on Smashing Magazine). Those instructions can be applied to a Kirby installation as well.
 
-## Secure data in git repositories 
+## Secure data in git repositories
 
 ### .gitignore /site/accounts
 
@@ -122,7 +122,7 @@ config.mysite.com.php
 
 ## Input filtering and sanitization
 
-If you work with forms or any other kind of user-generated content on your site, you have to make sure to properly filter and sanitize any user input. Even though Kirby does not use a database system and sql injections are therefor not possible, an attacker could still add malicious input to your text files in order to try to manipulate your site. 
+If you work with forms or any other kind of user-generated content on your site, you have to make sure to properly filter and sanitize any user input. Even though Kirby does not use a database system and sql injections are therefor not possible, an attacker could still add malicious input to your text files in order to try to manipulate your site.
 
 You can find more about (link: docs/cheatsheet#validators text: Kirby's input validators) in the cheat sheet. They are a good start to check incoming user data. Additionally you should read more about PHP's (link: http://php.net/manual/en/book.filter.php text: input filtering functions)
 
@@ -137,6 +137,4 @@ You can find more about (link: docs/cheatsheet#validators text: Kirby's input va
 
 ## Reporting security issues
 
-If you found a vulnerability in Kirby's core or the panel, please make sure to let us know immediately. We take any report very seriously. You can always write us directly at <support@getkirby.com>
-
-
+If you found a vulnerability in Kirby's core or the Panel, please make sure to let us know immediately. We take any report very seriously. You can always write us directly at <support@getkirby.com>

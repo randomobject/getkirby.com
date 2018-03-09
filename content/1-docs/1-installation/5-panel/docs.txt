@@ -1,4 +1,4 @@
-Title: Installing the panel
+Title: Installing the Panel
 
 ----
 
@@ -8,25 +8,25 @@ Description: Learn how to finalize the Panel installation by creating your first
 
 Text:
 
-The panel is included in Kirby's starterkit and boilerplate. The application is located on your server in the **/panel** folder. Please read the installation guide if the panel folder does not exist yet.
+The Panel is included in Kirby's starterkit and boilerplate. The application is located on your server in the **/panel** folder. Please read the installation guide if the panel folder does not exist yet.
 
-## Rename panel folder
-Since version 2.2.0 you can rename the panel folder to a custom name. To make this work, rename the panel folder and then modify your rewrite rules in the .htaccess file. Let's suppose you have renamed the panel folder to "controlpanel", then you need to change your .htaccess file like this:
+## Rename Panel folder
+Since version 2.2.0 you can rename the `/panel` folder to a custom name. To make this work, rename the `/panel` folder and then modify your rewrite rules in the `.htaccess` file. Let's suppose you have renamed the `/panel` folder to "controlpanel", then you need to change your `.htaccess` file like this:
 
 ```
-//default panel folder
-# make panel links work
+//default Panel folder
+# make Panel links work
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^panel/(.*) panel/index.php [L]
 
 //custom panel folder called controlpanel
-# make panel links work
+# make Panel links work
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^controlpanel/(.*) controlpanel/index.php [L]
 ```
-You can now access the panel under `http://yourdomain.com/controlpanel`.
+You can now access the Panel under `http://yourdomain.com/controlpanel`.
 
 ## Running the installer
 
@@ -58,6 +58,6 @@ Once all those checks have passed, the installer will jump to the user signup fo
 
 (image: panel-installation.png)
 
-Fill in all fields of the signup form to create the first user account. Once the account has been created the panel will take you to the login page, where you can sign in with your newly created username and password.
+Fill in all fields of the signup form to create the first user account. Once the account has been created the Panel will take you to the login page, where you can sign in with your newly created username and password.
 
 (image: login.png)

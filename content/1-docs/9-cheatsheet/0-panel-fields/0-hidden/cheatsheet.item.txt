@@ -10,7 +10,7 @@ Creates a hidden field
 
 Text:
 
-The hidden field makes it possible to keep fields in content files without actually making them editable or even visible in panel forms. 
+The hidden field makes it possible to keep fields in content files without actually making them editable or even visible in Panel forms. 
 
 ## Example
 
@@ -22,8 +22,8 @@ fields:
   text:
     label: Text
     type: textarea
-  notes: 
-    type: hidden  
+  notes:
+    type: hidden
 ```
 
-This can be useful to store additional information for a page, which is only available to the developer or editors who have access to the filesystem. 
+This can be useful to store additional information for a page, which is only available to the developer or editors who have access to the filesystem.

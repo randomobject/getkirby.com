@@ -4,7 +4,7 @@ Title: Panel field types
 
 Excerpt:
 
-All available field types for panel blueprints
+All available field types for Panel blueprints
 
 ----
 

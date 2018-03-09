@@ -24,7 +24,7 @@ if(v::between($input, 5, 20)) {
 
 ```
 
-## In panel fields
+## In fields
 
 ```
 fields:

@@ -24,7 +24,7 @@ if(v::max(5, 10)) {
 
 ```
 
-## In panel fields
+## In fields
 
 ```
 fields:

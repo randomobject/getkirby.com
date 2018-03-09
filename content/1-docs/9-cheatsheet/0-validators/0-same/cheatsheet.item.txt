@@ -24,7 +24,7 @@ if(v::same('A', 'A')) {
 
 ```
 
-## In panel fields
+## In Panel fields
 
 ```
 fields:

@@ -9,7 +9,7 @@ Text:
 <since v="2.3.0">
 ## Options
 
-With the options setting, you can switch off and on all major features for a page in the panel. This can be useful to block certain functionalities for editors, based on the blueprint/template.
+With the options setting, you can switch off and on all major features for a page in the Panel. This can be useful to block certain functionalities for editors, based on the blueprint/template.
 
 ### Available options
 
@@ -37,7 +37,7 @@ fields:
   …
 ```
 
-If you set the `template` option to true, panel users can only change templates if the (link: docs/panel/blueprints/subpages-settings text: page settings of the parent blueprint) allow at least two templates.
+If you set the `template` option to true, Panel users can only change templates if the (link: docs/panel/blueprints/subpages-settings text: page settings of the parent blueprint) allow at least two templates.
 
 </since>
 
@@ -59,7 +59,7 @@ fields:
 
 ## Page preview
 
-The sidebar for each page contains a link, which will take panel users to the corresponding page. Sometimes it makes sense to reroute this link or hide it entirely.
+The sidebar for each page contains a link, which will take Panel users to the corresponding page. Sometimes it makes sense to reroute this link or hide it entirely.
 
 ### Rerouting the preview link
 
@@ -86,9 +86,9 @@ preview: false
 
 ## Prevent page deletion
 
-By default pages can be deleted in the panel. In some cases you may want to protect important pages from deletion.
+By default pages can be deleted in the Panel. In some cases you may want to protect important pages from deletion.
 
-This setting will prevent panel users from deleting pages that use this blueprint:
+This setting will prevent Panel users from deleting pages that use this blueprint:
 
 ```
 …
@@ -102,7 +102,7 @@ Even when deleting is enabled, a page with subpages cannot be deleted. You have 
 
 ## Hide page
 
-Since Kirby 2.3.0 you can hide a page from the panel:
+Since Kirby 2.3.0 you can hide a page from the Panel:
 
 ```
 …

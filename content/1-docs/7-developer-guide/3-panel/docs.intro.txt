@@ -1,4 +1,4 @@
-Title: Extending the panel
+Title: Extending the Panel
 
 ----
 

@@ -22,7 +22,7 @@ $kirby->set('tag',          'article',  […]);
 $kirby->set('page::method', 'tags',     function() {});
 ```
 
-As you can see in this example of a blog plugin, the plugin can take care of registering all kinds of extensions, which will then be available in templates, controllers and even in the panel
+As you can see in this example of a blog plugin, the plugin can take care of registering all kinds of extensions, which will then be available in templates, controllers and even in the Panel
 
 ## List of registry extensions
 

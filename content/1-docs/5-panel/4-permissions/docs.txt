@@ -78,7 +78,7 @@ $username = $this->username();
 // The currently selected language in multi-language setups
 $language = $this->site()->language();
 
-// The selected panel interface translation
+// The selected Panel interface translation
 $translation = $this->translation();
 
 // Event type (name of the permission)

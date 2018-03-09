@@ -36,7 +36,7 @@ Old                    | New
 
 ## Panel config
 
-The panel config file is no longer loaded from `/site/panel/config.php`. Instead you should move all panel configuration options to `/site/config/config.php`
+The Panel config file is no longer loaded from `/site/panel/config.php`. Instead you should move all Panel configuration options to `/site/config/config.php`
 
 ## Panel fields
 

@@ -24,7 +24,7 @@ if(v::ip('127.0.0.1')) {
 
 ```
 
-## In panel fields
+## In fields
 
 ```
 fields:

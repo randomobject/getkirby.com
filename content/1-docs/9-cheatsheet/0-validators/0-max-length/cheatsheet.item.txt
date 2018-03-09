@@ -30,7 +30,7 @@ if(v::maxLength('Lorem ipsum dolor sit amet.', 10)) {
 
 ```
 
-## In panel fields
+## In fields
 
 ```
 fields:

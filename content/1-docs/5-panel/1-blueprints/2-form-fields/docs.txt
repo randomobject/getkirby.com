@@ -14,7 +14,7 @@ Kirby comes with a huge set of custom form fields, which you can use in your blu
 
 ## Available field types
 
-**Please check out the cheat sheet for a (link: docs/cheatsheet/#panel-fields text: full list of available panel field types).**
+**Please check out the cheat sheet for a (link: docs/cheatsheet/#panel-fields text: full list of available Panel field types).**
 
 ## Field names
 

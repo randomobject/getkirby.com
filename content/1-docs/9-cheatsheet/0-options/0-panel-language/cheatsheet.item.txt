@@ -2,11 +2,11 @@ Title: panel.language
 
 ----
 
-Excerpt: The code for the default interface language for the panel before the user's choice kicks in.
+Excerpt: The code for the default interface language for the Panel before the user's choice kicks in.
 
 ----
 
-Text: 
+Text:
 
 ## Default value
 

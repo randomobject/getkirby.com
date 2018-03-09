@@ -14,7 +14,7 @@ You can store any additional meta data for a file. This can be very handy to add
 
 The form, in which this data can be entered can be found in the sidebar of the fileviewer. Additional fields can be setup just like page fields. All field types, which are available for pages are also available for files.
 
-**Please check out the cheat sheet for a (link: docs/cheatsheet/#panel-fields text: full list of available panel field types).**
+**Please check out the cheat sheet for a (link: docs/cheatsheet/#panel-fields text: full list of available Panel field types).**
 
 The configuration for those fields go right into the file settings:
 
@@ -30,7 +30,7 @@ files:
 
 ## File limits
 
-Sometimes you only want specific file type to be uploaded to a certain template. To restrict panel users to upload other types, you can add a `type` field to the file's meta data in the blueprint. Please check out the (link: docs/cheatsheet/file/type text: list of all available file types).
+Sometimes you only want specific file type to be uploaded to a certain template. To restrict Panel users to upload other types, you can add a `type` field to the file's meta data in the blueprint. Please check out the (link: docs/cheatsheet/file/type text: list of all available file types).
 
 ```
 …
@@ -44,7 +44,7 @@ To allow multiple types provide a list of the file types you want:
 ```
 …
 files:
-    type: 
+    type:
         - image
         - video
 …
@@ -99,7 +99,7 @@ To make use of manual sorting in your templates you must sort files by the newly
 
 ## Hide files
 
-Like pages, files can be entirely hidden in the panel as well. They won't appear in the sidebar and the files manager will not be accessible either. This can be helpful if panel users shouldn't be able to view or edit files for certain pages.
+Like pages, files can be entirely hidden in the Panel as well. They won't appear in the sidebar and the files manager will not be accessible either. This can be helpful if Panel users shouldn't be able to view or edit files for certain pages.
 
 ```
 files:
@@ -111,6 +111,6 @@ files:
 Kirby's file uploader automatically sanitizes filenames to avoid broken links due to special characters in filenames. You can switch this off now in your blueprints with the sanitization option:
 
 ```
-files: 
+files:
   sanitize: false
 ```

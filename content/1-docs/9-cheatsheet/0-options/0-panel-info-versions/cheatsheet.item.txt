@@ -6,11 +6,11 @@ Since: 2.2.3
 
 ----
 
-Excerpt: Show/hide Kirby/Panel/Toolkit version information in the panel.
+Excerpt: Show/hide Kirby/Panel/Toolkit version information in the Panel.
 
 ----
 
-Text: 
+Text:
 
 ## Default value
 

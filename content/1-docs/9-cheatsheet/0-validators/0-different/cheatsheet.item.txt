@@ -24,7 +24,7 @@ if(v::different('A', 'B')) {
 
 ```
 
-## In panel fields
+## In fields
 
 ```
 fields:

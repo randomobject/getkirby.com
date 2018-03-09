@@ -14,14 +14,14 @@ Text:
 
 ## Manual updates
 
-Kirby has two updatable components: The **kirby** folder and the **panel** folder. 
+Kirby has two updatable components: The **kirby** folder and the **panel** folder.
 The most straight forward way to update is to fetch the latest ZIP file from **<http://download.getkirby.com>** and just replace those two folders on your server.
 
 ## Updates with Git
 
 ### Updating submodules
 
-If you are using Git submodules for the kirby core and the panel in your project, updating via the command line is very easy:
+If you are using Git submodules for the Kirby core and the Panel in your project, updating via the command line is very easy:
 
 ```
 git submodule foreach --recursive git checkout master

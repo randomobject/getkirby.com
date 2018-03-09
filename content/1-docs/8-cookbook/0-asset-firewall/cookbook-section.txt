@@ -233,7 +233,7 @@ RewriteRule ^content/(.*)$ index.php [L]
 
 From now on every request will go through our route first and we can intercept it with the code from above.
 
-You can check out if it works by simple browsing your site without being logged in. All images should no longer be accessible. As soon as you login to the panel, the images should appear again.
+You can check out if it works by simple browsing your site without being logged in. All images should no longer be accessible. As soon as you login to the Panel, the images should appear again.
 
 ## Fine tuning
 

@@ -57,7 +57,7 @@ pages:
 
 ## Sorting of subpages
 
-Subpages can be sorted in the panel by a field or pages method. You can also indicate the sort direction.
+Subpages can be sorted in the Panel by a field or pages method. You can also indicate the sort direction.
 
 **Sort by custom field**
 ```
@@ -86,7 +86,7 @@ pages:
 
 ## Reverse sorting of subpages
 
-Sometimes it is helpful to display subpages in reverse order in the panel. You can achieve this by setting `sort: flip`
+Sometimes it is helpful to display subpages in reverse order in the Panel. You can achieve this by setting `sort: flip`
 
  ```
 …
@@ -97,7 +97,7 @@ pages:
 
 ## Limit displayed subpages
 
-The panel will automatically start paginating subpages in the sidebar and in the subpages manager when the number of subpages surpasses 20.  You can change that with the limit parameter. This will not affect the maximum number of subpages.
+The Panel will automatically start paginating subpages in the sidebar and in the subpages manager when the number of subpages surpasses 20.  You can change that with the limit parameter. This will not affect the maximum number of subpages.
 
  ```
 …
@@ -180,7 +180,7 @@ pages:
 
 ## Hide subpages
 
-Subpages can be entirely hidden, so they don't show up in the sidebar and the subpages manager isn't available either. This can be useful if subpages are not allowed at all or if you've set a fixed number of subpages, which shouldn't be browsable nor modifiable — think of pure data providers for a template, which don't need to be edited by panel users. Hiding pages goes like this:
+Subpages can be entirely hidden, so they don't show up in the sidebar and the subpages manager isn't available either. This can be useful if subpages are not allowed at all or if you've set a fixed number of subpages, which shouldn't be browsable nor modifiable — think of pure data providers for a template, which don't need to be edited by Panel users. Hiding pages goes like this:
 
 ```
 …

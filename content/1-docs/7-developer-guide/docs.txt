@@ -17,7 +17,7 @@ Text:
 - (link: docs/developer-guide/plugins/publish text: How to publish your plugin)
 <!-- - (link: docs/developer-guide/ text: Developer styleguide) -->
 
-## Kirbytext 
+## Kirbytext
 
 - (link: docs/developer-guide/kirbytext/tags text: How to create custom Kirby tags)
 - (link: docs/developer-guide/kirbytext/filters text: Kirbytext filters)
@@ -27,9 +27,9 @@ Text:
 ## Extending the Panel
 
 - (link: docs/developer-guide/panel/fields text: Custom form fields)
-- (link: docs/developer-guide/panel/css text: Custom panel stylesheet)
+- (link: docs/developer-guide/panel/css text: Custom Panel stylesheet)
 - (link: docs/developer-guide/panel/widgets text: Dashboard widgets)
-- (link: docs/developer-guide/panel/translations text: Translating the panel)
+- (link: docs/developer-guide/panel/translations text: Translating the Panel)
 
 ## Advanced tasks
 

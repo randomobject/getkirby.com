@@ -2,7 +2,7 @@ Title: Dashboard Widgets
 
 ----
 
-Text: 
+Text:
 
 (toc)
 
@@ -12,9 +12,9 @@ You can extend the Panel dashboard with your own widgets. Widgets are installed 
 
 ## Anatomy of a Widget
 
-A widget must be installed in its own folder. Each widget has a main widget file, which must have the widget name. 
+A widget must be installed in its own folder. Each widget has a main widget file, which must have the widget name.
 
-### Examples: 
+### Examples:
 
 ```
 /site/widgets/mywidget/mywidget.php
@@ -22,7 +22,7 @@ A widget must be installed in its own folder. Each widget has a main widget file
 /site/widgets/backup/backup.php
 ```
 
-Additionally any number of files can be installed in the widget folder and included in the main widget file. 
+Additionally any number of files can be installed in the widget folder and included in the main widget file.
 
 ****
 
@@ -31,7 +31,7 @@ Additionally any number of files can be installed in the widget folder and inclu
 The main widget file must return an array with the following parts that build the widget box:
 
 ```php
-<?php 
+<?php
 
 return array(
   'title' => 'My widget',
@@ -44,7 +44,7 @@ return array(
   ),
   'html' => function() {
     return 'widget content';
-  }  
+  }
 );
 ```
 
@@ -56,7 +56,7 @@ The Widget array must contain a title field. The title will form the headline of
 
 ### Simple string
 
-```php 
+```php
 return array(
   'title' => 'My widget',
   // …
@@ -105,15 +105,15 @@ return array(
 );
 ```
 
-This will remove the bottom margin of the headline. 
+This will remove the bottom margin of the headline.
 
 ****
 
 ## Widget options
 
-A widget can optionally have one or more option links with icon in the top right corner of the widget box. It's not recommended to add more than two options though. 
+A widget can optionally have one or more option links with icon in the top right corner of the widget box. It's not recommended to add more than two options though.
 
-```php 
+```php
 return array(
   'title' => 'My widget',
   'options' => array(
@@ -132,13 +132,13 @@ return array(
 );
 ```
 
-The option icon name can be chosen from the FontAwesome icon set. The link can lead to an internal panel page or to an external URL. 
+The option icon name can be chosen from the FontAwesome icon set. The link can lead to an internal Panel page or to an external URL.
 
 ### Additional options for options
 
 #### Keyboard shortcut
 
-```php 
+```php
 return array(
   'title' => 'My widget',
   'options' => array(
@@ -155,7 +155,7 @@ return array(
 
 #### Open inside modal
 
-```php 
+```php
 return array(
   'title' => 'My widget',
   'options' => array(
@@ -173,7 +173,7 @@ return array(
 <since v="2.3.2">
 #### Link with target attribute
 
-```php 
+```php
 return array(
   'title' => 'My widget',
   'options' => array(
@@ -205,7 +205,7 @@ return array(
 );
 ```
 
-You can either directly create the HTML within the callback function or you can defer this to a template. 
+You can either directly create the HTML within the callback function or you can defer this to a template.
 
 ### Templates
 
@@ -227,15 +227,15 @@ return array(
 );
 ```
 
-The `__DIR__` constant in this example contains the current Widget directory. It's defined by PHP. 
+The `__DIR__` constant in this example contains the current Widget directory. It's defined by PHP.
 
-The second constant `DS` is defined by Kirby and contains the correct path separator depending on the operating system. It's a shortcut for PHP's `DIRECTORY_SEPARATOR`. On Windows `DS` contains `\`, on Unix-based systems `DS` contains `/`. It's recommended to use `DS` instead of a slash if you want to make sure that your widget runs correctly on Windows. 
+The second constant `DS` is defined by Kirby and contains the correct path separator depending on the operating system. It's a shortcut for PHP's `DIRECTORY_SEPARATOR`. On Windows `DS` contains `\`, on Unix-based systems `DS` contains `/`. It's recommended to use `DS` instead of a slash if you want to make sure that your widget runs correctly on Windows.
 
-In your template file you can now create all the HTML you want to display in the widget box below the headline. 
+In your template file you can now create all the HTML you want to display in the widget box below the headline.
 
 ### Passing variables to the template
 
-To pass variables from your callback method to the template, you can define them in an associative array as the second parameter of the `tpl::load` function. 
+To pass variables from your callback method to the template, you can define them in an associative array as the second parameter of the `tpl::load` function.
 
 ```php
 return array(
@@ -261,7 +261,7 @@ In your template you can use the variable like this:
 
 ## Accessing important objects
 
-You have full access to the most important objects in your widget code through the panel object. To fetch the panel you can use the `panel()` helper.
+You have full access to the most important objects in your widget code through the Panel object. To fetch the Panel you can use the `panel()` helper.
 
 ```php
 // accessing the panel object
@@ -276,7 +276,7 @@ $user = panel()->user();
 // accessing all users
 $users = panel()->users();
 
-// accessing the site 
+// accessing the site
 $site = panel()->site();
 
 // fetching a certain page
@@ -291,12 +291,12 @@ $page = panel()->site()->page('some/page');
 
 ## Hiding Widgets dynamically
 
-Sometimes it might make sense to display a widget only to a certain user or a user group or to hide it by other parameters. 
+Sometimes it might make sense to display a widget only to a certain user or a user group or to hide it by other parameters.
 
 You can do that by returning false instead of a valid widget array.
 
 ```php
-<?php 
+<?php
 
 if(panel()->user()->username() == 'peter') {
   return array(
@@ -323,14 +323,14 @@ In the current version of the dashboard, you cannot load external CSS files for 
 <!-- your widget content -->
 ```
 
-We are planning to provide a way to store CSS files directly in the widget folder and let the panel load them automatically just like for custom form fields. 
+We are planning to provide a way to store CSS files directly in the widget folder and let the Panel load them automatically just like for custom form fields.
 
 
 ****
 
 ## Sorting Widgets
 
-Since version 2.2 you can sort and hide widgets in your config file. 
+Since version 2.2 you can sort and hide widgets in your config file.
 
 ```php
 c::set('panel.widgets', array(

@@ -24,7 +24,7 @@ if(v::integer(12)) {
 
 ```
 
-## In panel fields
+## In fields
 
 ```
 fields:

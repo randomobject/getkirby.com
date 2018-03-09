@@ -6,7 +6,7 @@ Since: 2.1.0
 
 ----
 
-Text: 
+Text:
 
 ## Requirements
 
@@ -15,7 +15,7 @@ Hooks are available since Kirby 2.1. Make sure to update before you use them.
 ## Available hooks
 
 Hook ID | Passed Object(s)
-- | - 
+- | -
 panel.page.create | $page
 panel.page.update | $page, $oldPage (*)
 panel.page.delete | $page
@@ -35,7 +35,7 @@ panel.user.delete | $user
 panel.avatar.upload | $avatar
 panel.avatar.delete | $avatar
 
-Hooks are being triggered after the event is called in the panel.
+Hooks are being triggered after the event is called in the Panel.
 
 <since v="2.3.2">
 \* The second parameters for the following hooks were added in Kirby 2.3.2:
@@ -60,7 +60,7 @@ kirby()->hook('panel.page.create', function($page) {
 });
 ```
 
-A hook is not expected to return anything. You cannot control the user flow with hooks at this state. They are silently triggered. 
+A hook is not expected to return anything. You cannot control the user flow with hooks at this state. They are silently triggered.
 
 <since v="2.3.2">
 If multiple hooks use the same callback, you can set them at once:
@@ -86,7 +86,7 @@ As you can see, `$this` is the event object. Its `type()` method contains the ex
 
 ## Accessing panel, kirby, site and user in a hook callback
 
-In a lot of use-cases it will be helpful or even necessary to access the kirby, panel, site and current user objects from within a hook callback. You can do that with the following methods: 
+In a lot of use-cases it will be helpful or even necessary to access the kirby, panel, site and current user objects from within a hook callback. You can do that with the following methods:
 
 ```php
 $panel = panel();

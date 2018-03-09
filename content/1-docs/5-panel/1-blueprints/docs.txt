@@ -8,7 +8,7 @@ Description: Learn how to customize forms and other Panel options with blueprint
 
 Text:
 
-Blueprints are the counterpart of each of your templates. They create individual forms in the panel which make it easy to insert the required data. Blueprints offer a wide set of options to customize those forms and even provide help to panel users while they enter data.
+Blueprints are the counterpart of each of your templates. They create individual forms in the Panel which make it easy to insert the required data. Blueprints offer a wide set of options to customize those forms and even provide help to Panel users while they enter data.
 
 ## Blueprint definition
 

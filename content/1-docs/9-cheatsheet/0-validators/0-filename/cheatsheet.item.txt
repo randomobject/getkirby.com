@@ -24,7 +24,7 @@ if(v::filename('myfile.jpg')) {
 
 ```
 
-## In panel fields
+## In fields
 
 ```
 fields:

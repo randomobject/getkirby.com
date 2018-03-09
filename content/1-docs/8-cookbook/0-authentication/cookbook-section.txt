@@ -20,15 +20,15 @@ This tutorial will guide you through the necessary steps to build a login form a
 
 ## User management
 
-All users, including frontend users are managed via the (link: docs/panel/users text: panel).
+All users, including frontend users are managed via the (link: docs/panel/users text: Panel).
 
 (image: users.png)
 
-### Creating roles without panel access
+### Creating roles without Panel access
 
-By default Kirby has two roles: An admin role and an editor role. Both roles have access to the panel. Frontend authentication is mostly used for separate types of users, which should probably not have access to the panel at all. Kirby has a built-in way to create new roles without panel access.
+By default Kirby has two roles: An admin role and an editor role. Both roles have access to the Panel. Frontend authentication is mostly used for separate types of users, which should probably not have access to the Panel at all. Kirby has a built-in way to create new roles without Panel access.
 
-In your `/site/config/config.php` add the following list of roles, which will afterwards be available in the panel when selecting a role for a new user.
+In your `/site/config/config.php` add the following list of roles, which will afterwards be available in the Panel when selecting a role for a new user.
 
 ```php
 c::set('roles', array(
@@ -51,7 +51,7 @@ c::set('roles', array(
 ));
 ```
 
-If you now add a new user in the panel and assign the Client role, that user will not be able to login to the panel, but login to the site only.
+If you now add a new user in the Panel and assign the Client role, that user will not be able to login to the Panel, but login to the site only.
 
 You can customize this even further with more roles, which can later be used to determine which parts of the site are accessible for which role.
 

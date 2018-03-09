@@ -24,7 +24,7 @@ if(v::min(10, 5)) {
 
 ```
 
-## In panel fields
+## In fields
 
 ```
 fields:

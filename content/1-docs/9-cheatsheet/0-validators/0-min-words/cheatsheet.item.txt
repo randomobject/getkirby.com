@@ -28,7 +28,7 @@ if(v::minWords('Lorem ipsum dolor sit amet.', 5)) {
 
 ```
 
-## In panel fields
+## In fields
 
 ```
 fields:

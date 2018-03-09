@@ -24,21 +24,21 @@ Kirby 2 is separated into three Git repositories, which are all hosted on (link:
 
 (image: repos.png)
 
-### 1. kirby
+### 1. Kirby
 
-The Kirby core repository is the heart and soul of Kirby. You could run a website with just this core in combination with a content and a site folder. The panel is actually optional if you don't need the web interface.
+The Kirby core repository is the heart and soul of Kirby. You could run a website with just this core in combination with a content and a site folder. The Panel is actually optional if you don't need the web interface.
 
 **<https://github.com/getkirby/kirby>**
 
-### 2. kirby/toolkit
+### 2. Toolkit
 
 The Kirby toolkit is Kirby's foundation. It's an open-source PHP library which helps to provide a smooth layer for all the tasks that are not so easy or not so convenient with PHP's native functions and classes. The toolkit is a submodule of the Kirby core repository, so it will be automatically included when you add the core.
 
 **<https://github.com/getkirby/toolkit>**
 
-### 3. panel
+### 3. Panel
 
-The Kirby panel is Kirby's web interface, which makes it easier for clients to create and edit content.
+The Kirby Panel is Kirby's web interface, which makes it easier for clients to create and edit content.
 
 **<https://github.com/getkirby/panel>**
 
@@ -139,7 +139,7 @@ git submodule add https://github.com/getkirby/panel.git
 git submodule update --init --recursive
 ```
 
-Now if you want to update to the latest version of the Kirby core and the panel in the future, all you have to do is checkout the master branch and pull the changes:
+Now if you want to update to the latest version of the Kirby core and the Panel in the future, all you have to do is checkout the master branch and pull the changes:
 
 ```
 git submodule foreach --recursive git checkout master

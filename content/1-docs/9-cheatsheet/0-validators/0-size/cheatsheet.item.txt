@@ -24,7 +24,7 @@ if(v::size(f::size('/my/file.jpg'), 12121912)) {
 
 ```
 
-## In panel fields
+## In fields
 
 ```
 fields:

@@ -26,7 +26,7 @@ Text:
 
 (toc)
 
-The structure field is great for storing repeated blocks of data like addresses, events, team members, references, and a lot more. In this recipe, we will look at some examples of how to create a form for the field in the panel, and how to render the data in a template.
+The structure field is great for storing repeated blocks of data like addresses, events, team members, references, and a lot more. In this recipe, we will look at some examples of how to create a form for the field in the Panel, and how to render the data in a template.
 
 ## Define a structure field in a blueprint
 
@@ -70,7 +70,7 @@ Find out more about these options (link: https://getkirby.com/docs/cheatsheet/pa
 
 ## Structure field entries in the content file
 
-The data is saved to the content file as YAML structured data. After we have added some data via the panel, our content file will look somewhat like this:
+The data is saved to the content file as YAML structured data. After we have added some data via the Panel, our content file will look somewhat like this:
 
 ```
 events:
