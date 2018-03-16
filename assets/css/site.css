@@ -1160,7 +1160,6 @@ figure.slider-index {
   margin-bottom: 4em; }
 
 .voice-list .gamma {
-  margin-top: -.2em;
   margin-bottom: -.3em;
   transition: color .3s; }
 
@@ -1183,7 +1182,8 @@ figure.slider-index {
   height: 3.2em;
   padding: 2px;
   border: 2px solid #ddd;
-  transition: border-color .3s; }
+  transition: border-color .3s;
+  margin-top: 4px; }
 
 .voice-list a:hover .avatar {
   border-color: #222; }
