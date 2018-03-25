@@ -35,32 +35,32 @@ Let's start with a pretty basic HTML event registration form. We save the form i
 
   <div class="form-element">
     <label for="firstname">First Name: *</label>
-    <input type="text" id="firstname" name="firstname" placeholder="First name" value="<?= isset($data['firstname']) ? $data['firstname'] : '' ?>" required/>
+    <input type="text" id="firstname" name="firstname" placeholder="First name" value="<?= isset($data['firstname']) ? esc($data['firstname']) : '' ?>" required/>
   </div>
 
   <div class="form-element">
     <label for="lastname">Last Name: *</label>
-    <input type="text" id="lastname" name="lastname" placeholder="Last name" value="<?= isset($data['lastname']) ? $data['lastname'] : '' ?>" required/>
+    <input type="text" id="lastname" name="lastname" placeholder="Last name" value="<?= isset($data['lastname']) ? esc($data['lastname']) : '' ?>" required/>
   </div>
 
   <div class="form-element">
     <label for="company">Company: </label>
-    <input type="text" id="company" name="company" placeholder="Company" value="<?= isset($data['company']) ? $data['company'] : '' ?>"/>
+    <input type="text" id="company" name="company" placeholder="Company" value="<?= isset($data['company']) ? esc($data['company']) : '' ?>"/>
   </div>
 
   <div class="form-element">
     <label for="email">Email: *</label>
-    <input type="email" name="email" id="email" placeholder="mail@example.com" value="<?= isset($data['email']) ? $data['email'] : '' ?>" required/>
+    <input type="email" name="email" id="email" placeholder="mail@example.com" value="<?= isset($data['email']) ? esc($data['email']) : '' ?>" required/>
   </div>
 
   <div class="form-element">
     <label for="message">Message:</label>
-    <textarea name="message" id="message" placeholder="Do you have any comments?"><?= isset($data['message']) ? $data['message'] : '' ?></textarea>
+    <textarea name="message" id="message" placeholder="Do you have any comments?"><?= isset($data['message']) ? esc($data['message']) : '' ?></textarea>
   </div>
 
   <div class="honey">
      <label for="message">If you are a human, leave this field empty</label>
-     <input type="website" name="website" id="website" placeholder="http://example.com" value="<?= isset($data['website']) ? $data['website'] : '' ?>"/>
+     <input type="website" name="website" id="website" placeholder="http://example.com" value="<?= isset($data['website']) ? esc($data['website']) : '' ?>"/>
   </div>
   <p>* required</p>
 
@@ -100,11 +100,11 @@ return function($site, $pages, $page) {
       exit;
     }
     $data = array(
-      'firstname' => esc(get('firstname')),
-      'lastname'  => esc(get('lastname')),
-      'company'   => esc(get('company')),
-      'email'     => esc(get('email')),
-      'message'   => esc(get('message'))
+      'firstname' => get('firstname'),
+      'lastname'  => get('lastname'),
+      'company'   => get('company'),
+      'email'     => get('email'),
+      'message'   => get('message')
     );
 
     $rules = array(
@@ -168,19 +168,19 @@ Now that we have made sure the data was not send via some bot, we store it in th
 
 When dealing with user input, two things are important:
 
-1. Some of our website visitors might not have the best intentions, they might try to attack the website by trying to inject malicious code. We therefore need to sanitize data to prevent that. Here, we use the `esc()` helper function to escape all tags.
+1. Some of our website visitors might not have the best intentions, they might try to attack the website by trying to inject malicious code. When we output that data on the frontend, we therefore need to sanitize data to prevent that. Here, we use the `esc()` helper function to escape tags.
 
-```php
-$data = array(
-  'firstname' => esc(get('firstname')),
-  'lastname'  => esc(get('lastname')),
-  'company'   => esc(get('company')),
-  'email'     => esc(get('email')),
-  'message'   => esc(get('message'))
-);
+```
+<?= isset($data['firstname']) ? esc($data['firstname']) : '' ?>
 ```
 
-2. We need to make sure that we get the data we expect. Since we marked some of the fields as required and we also want to make sure that we get an email address when we expect an email address, we next set up a array of rules using Kirby's validators. For each element of the rules array, we define an array of validators. In this example we pass the rules a a multi-dimensional array that is later passed to the `invalid()` helper.
+**This is not only important when echoing the data back to the form, but also when we later output the data in other places.**
+
+2. We have to make sure that we get the data we expect. Since we marked some of the fields as required and we also want to make sure that we get an email address when we expect an email address, we next set up a array of rules using Kirby's validators. For each element of the rules array, we define an array of validators. In this example we pass the rules a a multi-dimensional array that is later passed to the `invalid()` helper.
+
+
+**To prevent garbage, you may want to use validators on the other fields as well, for example, by limiting input to a given character set (using regex patterns).**
+
 
 ```php
 $rules = array(
