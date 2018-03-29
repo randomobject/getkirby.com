@@ -30,3 +30,39 @@ fields:
     type: email
     autocomplete: false
 ```
+
+## In your templates
+
+You can simply echo the value of your email field in your templates  like this:
+
+```
+<?= $page->email() ?>
+```
+
+However, if you want to make use of Kirby's built-in email obfuscation, you have several options:
+
+Using `html::email()`:
+
+```php
+<a href="mailto:<?= html::email($site->email()) ?>">
+    <?php echo html::email($site->email()) ?>
+</a>
+```
+
+Using `str::encode()`:
+
+```php
+<a href="mailto:<?= str::encode($site->email()) ?>">
+    <?= str::encode($site->email()) ?>
+</a>
+````
+
+Using the `kirbytag()` helper:
+
+```php
+<?= kirbytag([
+      'email'  => $site->email(),
+      'text'  => 'Contact us'
+    ]);
+?>
+```
