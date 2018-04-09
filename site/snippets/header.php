@@ -23,7 +23,7 @@
   <?php endif ?>
 
   <?php if(isset($noindex) and $noindex): ?>
-  <meta name="robots" content="noindex, nofollow, noarchive"> 
+  <meta name="robots" content="noindex, nofollow, noarchive">
   <?php endif ?>
 
   <link rel="icon" href="<?php echo url('assets/images/favicon.png') ?>" type="image/png" />
@@ -34,19 +34,6 @@
 
 </head>
 <body class="<?php echo str_replace('.', '-', $page->template()) ?>" id="top">
-
-  <?php if(server::get('SERVER_NAME') == 'getkirby.com'): ?>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-431401-11', 'auto');
-    ga('send', 'pageview');
-
-  </script>
-  <?php endif ?>
 
   <!--[if lte IE 9]>
   <div class="browserupdate">
