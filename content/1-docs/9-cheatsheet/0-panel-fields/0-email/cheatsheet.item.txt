@@ -44,16 +44,14 @@ However, if you want to make use of Kirby's built-in email obfuscation, you have
 Using `html::email()`:
 
 ```php
-<a href="mailto:<?= html::email($site->email()) ?>">
-    <?php echo html::email($site->email()) ?>
-</a>
+<?= html::email($page->email()) ?>
 ```
 
 Using `str::encode()`:
 
 ```php
-<a href="mailto:<?= str::encode($site->email()) ?>">
-    <?= str::encode($site->email()) ?>
+<a href="mailto:<?= str::encode($page->email()) ?>">
+    <?= str::encode($page->email()) ?>
 </a>
 ````
 
@@ -61,7 +59,7 @@ Using the `kirbytag()` helper:
 
 ```php
 <?= kirbytag([
-      'email'  => $site->email(),
+      'email'  => $page->email(),
       'text'  => 'Contact us'
     ]);
 ?>
