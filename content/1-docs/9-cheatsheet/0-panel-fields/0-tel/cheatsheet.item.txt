@@ -20,3 +20,11 @@ fields:
     label: Phone
     type: tel
 ```
+
+## In your templates
+
+You can create `tel` links in your templates like this:
+
+```
+<?= html::a("tel:" . $page->phone(), $page->phone()) ?>
+```
