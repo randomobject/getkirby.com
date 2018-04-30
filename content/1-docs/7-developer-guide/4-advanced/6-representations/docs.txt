@@ -77,6 +77,8 @@ If it doesn't exist, the error page is displayed like if you didn't use content 
 
 It is still possible to create pages that contain a dot in their UID. So if you already have a page called `about.json` for some reason, it will continue to work. You can of course get the JSON representation of that page at `https://example.com/about.json.json`.
 
+The built-in PHP server has issues with dots in paths, unless they are part of a filename, and will produce an error. For this reason, you may need to explore other local development solutions when working with content representations.
+
 ### Auto-detection with the HTTP `Accept` header
 
 The HTTP `Accept` header can be set by the client to tell the server about the content types the client understands.
