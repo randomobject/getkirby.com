@@ -156,9 +156,8 @@ The Toolkit is a library of PHP classes Kirby is built upon. You can also use th
 
 ## Kirby plugins
 
-You don't have to reinvent the wheel if you need more functionality. The (link: https://github.com/getkirby/plugins text: official Kirby repository) includes quite a few plugins ready to be incorporated into your website. There are also two other "non-official" listings out there on the web:
+You don't have to reinvent the wheel if you need more functionality. The (link: https://github.com/getkirby-plugins text: official Kirby repository) includes quite a few plugins ready to be incorporated into your website. There are also a "non-official" listings out there on the web:
 
-- (link: http://getkirby-plugins.com text: Plugins and extensions for Kirby CMS)
 - (link: https://github.com/jenstornell/kirby-plugins text: Kirby Plugins: The unofficial plugin list for Kirby CMS)
 
 **Please use third-party plugins at your own discretion. They may be outdated and not work with current Kirby releases, or even contain insecure code. If you run into problems with using such plugins, please contact the plugin authors.**
