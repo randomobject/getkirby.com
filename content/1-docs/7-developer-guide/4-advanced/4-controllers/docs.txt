@@ -53,13 +53,16 @@ The controller will take care of fetching the right articles and add pagination 
 
 return function($site, $pages, $page) {
 
-  // get all articles and add pagination
-  $articles = $page->children()->visible()->flip()->paginate(20);
+  // get all articles
+  $articles = $page->children()->visible()->flip();
 
   // add a tag filter
   if($tag = param('tag')) {
     $articles = $articles->filterBy('tags', '=', urldecode($tag), ',');
   }
+  
+  // add pagination
+  $articles = $articles->paginate(20);
 
   // create a shortcut for pagination
   $pagination = $articles->pagination();
