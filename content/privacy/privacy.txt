@@ -33,7 +33,7 @@ We don't collect any personal data on our website except server logs. We use the
 *To speed up access to our site across the globe*
 - Algolia:
 *To provide a really good search experience for our site and docs*
-- Imgix:
+- Cloudinary:
 *To minify our images and increase loading speed for images across the globe*
 
 [Read more…](#website)
@@ -151,11 +151,15 @@ Switzerland*
 
 KeyCDN complies with GDPR. You can find their privacy policy here: [https://www.keycdn.com/privacy](https://www.keycdn.com/privacy)
 
-#### Imgix
+#### Cloudinary
 
-We use a third-party service to reduce the file size of the images on our site and also to provide faster access through their content delivery network. This service is provided by https://imgix.com.
+We use a third-party service to reduce the file size of the images on our site and also to provide faster access through their content delivery network. This service is provided buy
 
-You can find their privacy policy here: [https://www.imgix.com/privacy](https://www.imgix.com/privacy)
+Cloudinary Ltd.
+111 W Evelyn Ave, Suite 206
+Sunnyvale, CA 94086
+
+You can find their privacy policy here: [https://cloudinary.com/privacy](https://cloudinary.com/privacy)
 
 #### Algolia
 

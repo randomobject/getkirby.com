@@ -10,7 +10,7 @@
  --><li class="screenshot">
       <div class="screen-wrap">
         <?php if($reference->hasImages()): ?>
-        <img src="<?php echo imgix($reference->image(), array('w' => 350, 'h' => 220, 'fit' => 'crop')) ?>" alt="Screenshot: <?php echo $reference->title() ?>">
+        <img src="<?php echo cloudinary($reference->image(), array('w' => 350, 'h' => 220, 'c' => 'fill')) ?>" alt="Screenshot: <?php echo $reference->title() ?>">
         <?php endif ?>
         <div class="screen-refl"><a class="btn-white" href="<?php echo $reference->link() ?>">visit</a></div>
       </div>

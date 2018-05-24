@@ -12,7 +12,7 @@
    --><li>
         <?php if($image = $feature->image()): ?>
         <a href="<?php echo $feature->link() ?>">
-          <img src="<?php echo imgix($image, array('w' => 300)) ?>" alt="Screenshot: <?php echo $feature->title() ?>" />
+          <img src="<?php echo cloudinary($image, array('w' => 300)) ?>" alt="Screenshot: <?php echo $feature->title() ?>" />
         </a>
         <?php endif ?>
         <div class="text smaller">
@@ -37,7 +37,7 @@
    --><li class="screenshot">
         <div class="screen-wrap">
           <?php if($image = $reference->image()): ?>
-          <img src="<?php echo imgix($image, array('w' => 350, 'h' => 220, 'fit' => 'crop')) ?>" alt="Screenshot: <?php echo $reference->title() ?>" />
+          <img src="<?php echo cloudinary($image, array('w' => 350, 'h' => 220, 'c' => 'fill')) ?>" alt="Screenshot: <?php echo $reference->title() ?>" />
           <?php endif ?>
           <div class="screen-refl"><a class="btn-white" href="<?php echo $reference->link() ?>">visit</a></div>
         </div>
@@ -81,7 +81,7 @@
    --><li>
         <a href="http://twitter.com/<?php echo $voice->username() ?>">
           <?php if($voice->image()): ?>
-          <img class="avatar" src="<?php echo imgix($voice->image(), array('w' => 100, 'h' => 100, 'fit' => 'crop')) ?>" alt="Avatar of <?php echo $voice->title() ?>" />
+          <img class="avatar" src="<?php echo cloudinary($voice->image(), array('w' => 100, 'h' => 100, 'c' => 'fill')) ?>" alt="Avatar of <?php echo $voice->title() ?>" />
           <?php endif ?>
           <h2 class="gamma"><?php echo $voice->title() ?></h2>
           <p class="zeta">@<?php echo $voice->username() ?></p>
