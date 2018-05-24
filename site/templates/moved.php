@@ -21,13 +21,6 @@
 
       <a class="btn" href="<?php echo url() ?>/<?php echo $page->movedto() ?>">Show me the docs</a>
 
-      <?php if(server::get('SERVER_NAME') == 'getkirby.com'): ?>
-      <section class="disqus">
-      <?php echo disqus('getkirby') ?>
-      </section>
-      <?php endif ?>
-
-
     </div>
 
     <aside class="sidebar col-2-6 last">
