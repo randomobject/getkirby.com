@@ -9,7 +9,7 @@ Subtitle: Buy a Kirby 2 license
 Personal:
 
 - A single website
-- Personal (non-commercial) use only!
+- hobbyist, non-commercial use only!
 - No support
 - No volume discounts
 
@@ -23,10 +23,6 @@ Commercial:
 - Volume discounts
 
 ----
-PersonalPrice: €15 / $17
+PersonalPrice: $17
 ----
-PersonalDiscount:
-----
-CommercialPrice: €79 / $89
-----
-CommercialDiscount:
+CommercialPrice: $89
