@@ -1,5 +1,7 @@
 <?php
 
+c::set('debug', true);
+
 c::set('documentor', true);
 c::set('inspector', true);
 
