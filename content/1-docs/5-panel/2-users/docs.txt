@@ -49,7 +49,7 @@ fields:
     width: 1/2
 ```
 
-You can easily access you new custom fields in your templates:
+You can easily access your new custom fields in your templates:
 
 ```php
 <?= $site->user('peter')->twitter() ?>
