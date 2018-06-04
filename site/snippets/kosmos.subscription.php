@@ -17,6 +17,6 @@
     </p>
   </form>
 
-  <p class="newsletter-meta">By subscribing you agree that we send you monthly newsletters. We won't ever spam you! You can unsubscribe any time. We use the Australian company CampaignMonitor to collect subscribers and send out newsletters. Find out more in our <a href="<?= url('privacy#newsletter') ?>">pricacy policy</a>.</p>
+  <p class="newsletter-meta">By subscribing you agree that we send you monthly newsletters. We won't ever spam you! You can unsubscribe any time. We use the Australian company CampaignMonitor to collect subscribers and send out newsletters. Find out more in our <a href="<?= url('privacy#newsletter') ?>">privacy policy</a>.</p>
 
 </section>
