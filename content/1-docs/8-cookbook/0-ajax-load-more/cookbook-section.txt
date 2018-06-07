@@ -113,7 +113,7 @@ return function($site, $pages, $page) {
     $projects = $projects->offset($offset)->limit($limit);
 
     // check if there are more projects left
-    $more = $count > $offset + 1;
+    $more = $count > $offset + $limit;
 
   // otherwise set the number of projects initially displayed
   } else {
@@ -159,10 +159,10 @@ $limit  = intval(get('limit'));
 $projects = $projects->offset($offset)->limit($limit);
 
 // check if there are more projects left
-$more = $count > $offset+1;
+$more = $count > $offset + $limit;
 ```
 
-We first convert the values for `offset` and `limit` to integer. Then we apply those values to the `offset()` and `limit()` methods we call on `$projects`. In the last step, we check if the number of projects is still greater than the value of `$offset` plus 1 and depending on the result, we set `$more` to `true` or `false`.
+We first convert the values for `offset` and `limit` to integer. Then we apply those values to the `offset()` and `limit()` methods we call on `$projects`. In the last step, we check if the number of projects is still greater than the value of `$offset` plus `$limit and depending on the result, we set `$more` to `true` or `false`.
 
 At the end of the controller, we return all variables so that they can be used by the template(s).
 
