@@ -59,17 +59,6 @@ Since our last edition, a couple of new themes for Kirby have seen the light of 
 
 (columns…)
 
-(image: thinking-theme.jpg)
-
-++++
-
-[Thinking](http://themes.kueker.net/thinking/) is a new theme by Florian Kueker. It features reusable modules, social icons and more.
-
-(…columns)
-
-
-(columns…)
-
 (image: koncrete-theme.jpg)
 
 ++++
