@@ -33,7 +33,7 @@
     <h2 class="beta"><a href="<?php echo url('made-with-kirby-and-love') ?>">Made with Kirby and &#9829;</a></h2>
 
     <ul class="reference-list list-3">
-      <?php foreach($pages->find('made-with-kirby-and-love')->children()->shuffle()->limit(3) as $reference): ?><!--
+      <?php foreach($pages->find('made-with-kirby-and-love')->children()->visible()->shuffle()->limit(3) as $reference): ?><!--
    --><li class="screenshot">
         <div class="screen-wrap">
           <?php if($image = $reference->image()): ?>
