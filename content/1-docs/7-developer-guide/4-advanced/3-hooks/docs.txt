@@ -38,16 +38,7 @@ panel.avatar.delete | $avatar
 Hooks are being triggered after the event is called in the Panel.
 
 <since v="2.3.2">
-\* The second parameters for the following hooks were added in Kirby 2.3.2:
-
-- panel.file.sort
-- panel.file.replace
-- panel.file.update
-- panel.page.sort
-- panel.page.hide
-- panel.page.update
-- panel.site.update
-- panel.user.update
+\* The second parameters for the hooks marked with an asterisk are available since Kirby 2.3.2:
 </since>
 
 ## Registering a hook
