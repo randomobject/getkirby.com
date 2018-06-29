@@ -20,7 +20,7 @@ Kosmos-Subscription: on
 
 Text:
 
-Originally published via email on Mai 4, 2018.
+Originally published via email on May 4, 2018.
 
 There is so much interesting stuff going on in our industry: with browsers supporting more features seemingly on a daily basis, with the possibilities CSS opens up for designers ([and the crazy stuff people do with it](https://github.com/cyanharlow/purecss-francine)), with helpful tools for all sorts of problems, and a lot more.
 
