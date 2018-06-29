@@ -50,7 +50,7 @@ If you are planning to use CSS grid in in an upcoming project, check out [CSSGr.
 (…columns)
 
 ## Fonts
-- Variable fonts promise more flexibility regarding font attributes such as width, slant, x-height, slabs or rounding, facilitating responsive design on the typography layer. Examples of what you can do with variable fonts can be found [here](https://www.dstype.com/variable-fonts) and [here](http://fvar.unsoundscapes.com]. [Browser support](https://caniuse.com/#feat=variable-fonts) is unfortunately still somewhat limited.
+- Variable fonts promise more flexibility regarding font attributes such as width, slant, x-height, slabs or rounding, facilitating responsive design on the typography layer. Examples of what you can do with variable fonts can be found [here](https://www.dstype.com/variable-fonts) and [here](http://fvar.unsoundscapes.com). [Browser support](https://caniuse.com/#feat=variable-fonts) is unfortunately still somewhat limited.
 
 ## JS
 - [Micro.js](http://microjs.com) is a collection of small JavaScript frameworks and libraries that solve a single problem.
@@ -63,11 +63,11 @@ If you are planning to use CSS grid in in an upcoming project, check out [CSSGr.
 
 ## Forms
 
-- Mary Lou shares an interesting idea for a [progressive hover effect on desktop](https://tympanus.net/codrops/2018/05/02/ideas-for-proximity-feedback-with-progressive-hover-effects/], for example to highlight errors in a form when the user approaches the submit button.
+- Mary Lou shares an interesting idea for a [progressive hover effect on desktop](https://tympanus.net/codrops/2018/05/02/ideas-for-proximity-feedback-with-progressive-hover-effects/), for example to highlight errors in a form when the user approaches the submit button.
 
 ## This & That
 
-- Heleen van Nues and Lennart Overkamp discuss the downsides of using wireframes and [how "priority guides" can help focus on the user and content](https://alistapart.com/article/priority-guides-a-content-first-alternative-to-wireframes].
+- Heleen van Nues and Lennart Overkamp discuss the downsides of using wireframes and [how "priority guides" can help focus on the user and content](https://alistapart.com/article/priority-guides-a-content-first-alternative-to-wireframes).
 
 (columns…)
 [Dear Data](http://www.dear-data.com/theproject) is a beautiful project by Giorgia Lupi and Stefanie Posavec. Each week – over the period of a year – they sent each other postcards with visualizations of data related to their daily lives. Now available as a book.
@@ -78,12 +78,12 @@ If you are planning to use CSS grid in in an upcoming project, check out [CSSGr.
 
 (…columns)
 
-- Dave Rupert shares a compendium of tech-related laws, entitled the [Eponymous Laws of Tech](https://daverupert.com/2018/04/eponymous-laws-of-tech/].
+- Dave Rupert shares a compendium of tech-related laws, entitled the [Eponymous Laws of Tech](https://daverupert.com/2018/04/eponymous-laws-of-tech/).
 
 - [How HTTPS Works](https://howhttps.works) and How [DNS Works](https://howdns.works) are two nicely made explanatory tutorials in the form of a comic.
 
 - Anton Lovchikov shares how to [adjust elements within components](https://blog.prototypr.io/optical-adjustments-in-components-a7f1f8655e0) to make them look optically aligned.
 
-- Rachel Andrews wrote a [Guide To The State Of Print Stylesheets in 2018](https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/], or how we can make pages of our websites printer friendly, for example for printing recipes, invoices etc.
+- Rachel Andrews wrote a [Guide To The State Of Print Stylesheets in 2018](https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/), or how we can make pages of our websites printer friendly, for example for printing recipes, invoices etc.
 
 - And here's [some music](https://codingradio.xyz) for when you get back to coding again…
