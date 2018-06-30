@@ -166,7 +166,7 @@ pages:
 …
 ```
 
-Even the format can be changed. To set the format, use (link: http://php.net/manual/en/function.date.php text: PHP's date formatting). The default is `Ymd`. If you change the format, make sure that it does not contain dashes, which would break the numbers.
+Even the format can be changed. To set the format, use (link: http://php.net/manual/en/function.date.php text: PHP's date formatting). The default is `Ymd`. The format is used for numbering the folder in the filesystem. If you change the format, make sure that it does not contain dashes, which would break the numbers.
 
 ```
 …
@@ -175,6 +175,19 @@ pages:
     mode: date
     field: added
     format: YmdHi
+…
+```
+
+To change how the date is displayed in the sidebar and in Pages view, you can use the `display` option. The default is `Y/m/d`.
+
+```
+…
+pages:
+  num:
+    mode: date
+    field: added
+    format: YmdHi
+    display: Y/m/d H:i
 …
 ```
 
