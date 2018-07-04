@@ -118,7 +118,7 @@ No matter how many more templates you are going to add to your site, the header 
 Sometimes it is useful to pass a variable to a snippet.
 
 ```php
-<?php snippet('mysnippet', array('title' => 'Hello!')) ?>
+<?php snippet('mysnippet', ['title' => 'Hello']) ?>
 ```
 
 With the code above, `/site/snippets/mysnippet.php` will receive a title variable with the content "Hello!":
@@ -139,7 +139,7 @@ A more useful case for this is an article list for a blog.
   <h1>Blog</h1>
 
   <?php foreach($page->children() as $article): ?>
-  <?php snippet('article', array('article' => $article)) ?>
+  <?php snippet('article', ['article' => $article]) ?>
   <?php endforeach ?>
 
 </main>
@@ -151,9 +151,9 @@ A more useful case for this is an article list for a blog.
 
 ```php
 <article>
-  <h1><?= html($article->title()) ?></h1>
+  <h1><?= $article->title()->html() ?></h1>
   <time><?= $article->date('d/m/Y') ?></time>
-  <?= kirbytext($article->intro()) ?></p>
+  <?= $article->intro()->kirbytext() ?></p>
   <a href="<?= $article->url() ?>">Read more…</a>
 </article>
 ```
@@ -163,5 +163,5 @@ A more useful case for this is an article list for a blog.
 The snippet() function has a third, optional parameter - boolean - which can be set to simply return the parsed text, instead of directly displaying it. This makes it possible to use snippets in a wide variety of situations, not just inside page templates:
 
 ```php
-$email_body = snippet('email', array('data' => $data), true);
+$text = snippet('text', ['data' => $data], true);
 ```
