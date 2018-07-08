@@ -39,7 +39,7 @@ Make sure that the PHP mb_string extension is installed/enabled.
 
 The Panel is not reachable? Make sure to use Kirby's default (link: https://github.com/getkirby/starterkit/blob/master/.htaccess text: .htaccess file).
 
-Pls. make sure that you are using the minimum required version of PHP, which is 5.4 since Kirby 2.2. We recommend using the most recent PHP version that is available to you, preferably PHP 7, but at least 5.6 or 5.5.
+Please make sure that you use the minimum required version of PHP, which is 5.6 since Kirby 2.5.11 (and 5.4 since Kirby 2.2). We recommend using the most recent PHP version that is available to you, preferably PHP 7, but at least 5.6.
 
 If the Panel does still not work, please contact us: <support@getkirby.com>
 
