@@ -37,6 +37,6 @@ Text:
     <?php foreach($items as $item): ?>
     <article><?= $item->title() ?></article>
     <?php endforeach; ?>
-  </ul>
+  </div>
 <?php endforeach ?>
 ```
